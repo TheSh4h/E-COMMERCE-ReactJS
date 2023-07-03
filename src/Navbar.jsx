@@ -2,25 +2,32 @@ const Navbar = () => {
     return ( 
         <div className="flex justify-between items-center m-5
         border-b">
-            <div className="flex items-center">
-            <img width="64" height="64" src="https://img.icons8.com/cute-clipart/64/shopping-cart.png" alt="shopping-cart"/>
-                    <h1 className="text-3xl font-bold text-green-950">E-Kart</h1>
+            <div className="flex items-center cursor-pointer">
+                <img width="64" height="64" src="https://img.icons8.com/cute-clipart/64/shopping-cart.png" alt="shopping-cart"/>
+                <h1 className="text-3xl font-bold text-green-800">E-Kart</h1>
             </div>
-            <div className="flex items-center">    
+
+            <div className="flex items-center
+             rounded cursor-pointer hover:bg-slate-200 p-2 transition duration-300
+            ">    
                 <h1>Deals</h1>
             </div>
 
-            <div className="flex items-center">
+            <div className="flex items-center
+            rounded cursor-pointer hover:bg-slate-200 p-2 transition duration-300
+            ">
                 <h1>What's New</h1>
             </div>
 
-            <div className="flex items-center">
+            <div className="flex items-center
+            rounded cursor-pointer hover:bg-slate-200 p-2 transition duration-300
+            ">
                 <h1>Delivery</h1>
             </div>
 
             <div className="flex items-center relative">
                 <input type="text" placeholder="Search Product" className="
-                bg-slate-200 rounded-2xl h-7 outline-none p-3
+                bg-slate-200 rounded-2xl h-10 outline-none p-3
                 " />
                 <div className="absolute right-0 p-1 flex items-center cursor-pointer">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5">
@@ -30,7 +37,9 @@ const Navbar = () => {
                 </div>
             </div>
 
-            <div className="relative flex items-center">
+            <div className="relative flex items-center
+            rounded cursor-pointer hover:bg-slate-200 p-2 transition duration-300
+            ">
                 
                 <div>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
@@ -40,7 +49,9 @@ const Navbar = () => {
 
                 <h1 className="pl-1">Account</h1>
             </div>
-            <div className="flex relative items-center">
+            <div className="flex relative items-center
+            rounded cursor-pointer hover:bg-slate-200 p-2 transition duration-300
+            ">
                 <div>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
