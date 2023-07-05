@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-/* html{
-    font-family: "Quicksand";
-} */
+.card{
+    @apply rounded-2xl relative h-96 w-48 cursor-pointer shadow-slate-500 shadow-xl hover:blur-sm transition duration-150 hover:ease-in;
+}
+
+.badge {
+    @apply absolute top-2 left-0 right-0 flex items-center justify-center;
+}
