@@ -1,9 +1,11 @@
+import Kart from './img/Kart.png';
+
 const Navbar = () => {
     return ( 
         <div className="flex justify-between items-center m-5
         border-b">
             <div className="flex items-center cursor-pointer">
-                <img width="64" height="64" src="https://img.icons8.com/cute-clipart/64/shopping-cart.png" alt="shopping-cart"/>
+                <img src={Kart} alt="Kart" />
                 <h1 className="text-3xl font-bold text-green-800">E-Kart</h1>
             </div>
 
