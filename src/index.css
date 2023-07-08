@@ -9,3 +9,7 @@
 .badge {
     @apply absolute top-2 left-0 right-0 flex items-center justify-center;
 }
+
+.itemCard{
+    @apply relative rounded-2xl h-56 w-64 cursor-pointer shadow-xl overflow-hidden;
+}
