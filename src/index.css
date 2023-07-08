@@ -12,4 +12,9 @@
 
 .itemCard{
     @apply relative rounded-2xl h-56 w-64 cursor-pointer shadow-xl overflow-hidden;
+    @apply transition ease-in-out delay-150 hover:translate-y-1 hover:scale-110;
+}
+
+.itemBadge {
+    @apply absolute top-0 left-2 bg-white rounded-lg p-1 mt-1 text-green-950;
 }
