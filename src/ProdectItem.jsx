@@ -1,7 +1,7 @@
 const ProductItem = ( { image, title, description, price, tag } ) => {
     return ( 
         <div className="itemCard">
-                <div className="h-56 overflow-hidden">
+                <div className="h-64 w-96 overflow-hidden">
                     <img className="object-cover w-full h-full" src={image} />
                 </div>
                 <div className="p-4">
