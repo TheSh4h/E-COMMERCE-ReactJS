@@ -11,7 +11,7 @@
 }
 
 .itemCard{
-    @apply relative rounded-2xl h-56 w-64 m-2 cursor-pointer shadow-xl overflow-hidden;
+    @apply max-w-xs mx-auto bg-white rounded-lg shadow-md overflow-hidden cursor-pointer;
     @apply transition ease-in-out delay-150 hover:translate-y-1 hover:scale-110;
 }
 

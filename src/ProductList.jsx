@@ -1,56 +1,25 @@
+import ProductItem from './ProdectItem';
 import ps5 from './img/ps5.jpg';
 import bed from './img/bed.jpg';
 import hp from './img/hp.jpg';
 import hp2 from './img/hp2.jpg';
 import aot from './img/aot.jpg';
+import macbook from './img/macbook.jpg';
+import db from './img/db.jpg';
+import kb from './img/kb.jpg';
+
 
 const ProductList = () => {
     return ( 
-        <div className="grid place-items-center lg:grid-cols-4 md:grid-cols-1 gap-4 p-10">
+        <div className="grid place-items-center lg:grid-cols-4 md:grid-cols-2 gap-4 p-10">
 
-            <div className="itemCard">
-                <img src={ps5} alt="playstation 5" className='hover:blur-sm transition duration-150'/>
-
-                <div className='text-center'>
-                    <span className='font-semibold'>PlayStation 5</span>
-                </div>
-                <div className='itemBadge'>
-                    <span>In Stock</span>
-                </div>
-            </div>
-
-            <div className="itemCard">
-                <img src={bed} alt="bed" className='object-cover h-48 w-72 hover:blur-sm transition duration-150'/>
-
-                <div className='text-center'>
-                    <span className='font-semibold'>bed</span>
-                </div>
-                <div className='itemBadge'>
-                    <span>In Stock</span>
-                </div>
-            </div>
-
-            <div className="itemCard">
-                <img src={hp2} alt="playstation 5" className='object-cover h-48 hover:blur-sm transition duration-150'/>
-
-                <div className='text-center'>
-                    <span className='font-semibold'>PlayStation 5</span>
-                </div>
-                <div className='itemBadge'>
-                    <span>In Stock</span>
-                </div>
-            </div>
-
-            <div className="itemCard">
-                <img src={aot} alt="Attack on Titan" className='object-center h-48 w-36 hover:blur-sm transition duration-150'/>
-
-                <div className='text-center'>
-                    <span className='font-semibold'>PlayStation 5</span>
-                </div>
-                <div className='itemBadge'>
-                    <span>In Stock</span>
-                </div>
-            </div>
+            <ProductItem image={ps5} title="PlayStation 5" description="Description goes here" price="$500" tag="USD" />
+            <ProductItem image={aot} title="Attack on Titan Manga" description="Description goes here" price="$500" tag="USD" />
+            <ProductItem image={hp} title="Audionic Headphone" description="Description goes here" price="$500" tag="USD" />
+            <ProductItem image={hp2} title="Headphone" description="Description goes here" price="$500" tag="USD" />
+            <ProductItem image={macbook} title="Apple Macbook Air M1" description="Description goes here" price="$500" tag="USD" />
+            <ProductItem image={db} title="Hex Dumbbells" description="10kg Dumbells set" price="$49.99" tag="USD" />
+            <ProductItem image={kb} title="Kettlebell 32kg" description="cast iron" price="$80.00" tag="/USD" />
 
         </div>
      );
