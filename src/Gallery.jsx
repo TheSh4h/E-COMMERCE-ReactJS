@@ -6,13 +6,13 @@ import console from './img/console.jpg';
 const Gallery = () => {
     return ( 
 
-    <div>
+    <div className='flex justify-center mb-10'>
 
-        <div className='flex justify-center grid-cols-4 gap-4 mt-10'>
+        <div className='grid lg:grid-cols-4 md:grid-cols-2 gap-4 m-10'>
 
             <div className='card'>
                 <div>
-                    <img src={gym} alt="failed to load" className='object-cover object-left h-96 w-48
+                    <img src={gym} alt="failed to load" className='object-cover object-left h-48 sm:h-96 w-full
                     rounded-2xl'/>
                 </div>
                 <div className='badge'>
@@ -22,7 +22,7 @@ const Gallery = () => {
 
                 <div className='card'>
                 <div>
-                    <img src={books} alt="failed to load" className='object-none object-center h-96 w-48
+                    <img src={books} alt="failed to load" className='object-none object-center h-48 sm:h-96 w-full
                     rounded-2xl'/>
                 </div>
                 <div className='badge'>
@@ -32,7 +32,7 @@ const Gallery = () => {
 
             <div className='card'>
                 <div>
-                    <img src={furniture} alt="failed to load" className='object-cover object-right h-96 w-48
+                    <img src={furniture} alt="failed to load" className='object-cover object-right h-48 sm:h-96 w-full
                     rounded-2xl'/>
                 </div>
                 <div className='badge'>
@@ -42,7 +42,7 @@ const Gallery = () => {
 
             <div className='card'>
                 <div>
-                    <img src={console} alt="failed to load" className='object-cover object-center h-96 w-48
+                    <img src={console} alt="failed to load" className='object-cover object-center h-48 sm:h-96 w-full
                     rounded-2xl'/>
                 </div>
                 <div className='badge'>

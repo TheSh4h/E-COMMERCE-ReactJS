@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .card{
-    @apply rounded-2xl relative h-96 w-48 cursor-pointer shadow-slate-500 shadow-xl hover:blur-sm transition duration-150 hover:ease-in;
+    @apply rounded-2xl relative lg:h-96 w-48 cursor-pointer shadow-slate-500 shadow-xl hover:blur-sm transition duration-150 hover:ease-in;
 }
 
 .badge {
