@@ -1,6 +1,7 @@
 import Navbar from './Navbar';
 import Gallery from './Gallery';
 import ProductList from './ProductList';
+import Footer from './Footer';
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Navbar/>
       <Gallery/>
       <ProductList/>
+      <Footer/>
     </div>
   );
 }
