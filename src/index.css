@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+.navbarStart {
+    @apply flex items-center
+    rounded cursor-pointer hover:bg-slate-200 p-2 transition duration-300;
+    @apply hidden lg:block
+}
+
 .card{
     @apply rounded-2xl relative lg:h-96 w-48 cursor-pointer shadow-slate-500 shadow-xl hover:blur-sm transition duration-150 hover:ease-in;
 }

@@ -1,6 +1,10 @@
+import { useState } from 'react';
 import Kart from './img/Kart.png';
 
 const Navbar = () => {
+
+    const [showMenu, setShowMenu] = useState(false);
+
     return ( 
         <div className="flex justify-between items-center m-5
         border-b">
@@ -9,21 +13,18 @@ const Navbar = () => {
                 <h1 className="text-3xl font-bold text-green-800">E-Kart</h1>
             </div>
 
-            <div className="flex items-center
-             rounded cursor-pointer hover:bg-slate-200 p-2 transition duration-300
-            ">    
+            <div className="navbarStart"
+            >    
                 <h1>Deals</h1>
             </div>
 
-            <div className="flex items-center
-            rounded cursor-pointer hover:bg-slate-200 p-2 transition duration-300
-            ">
+            <div className="navbarStart"
+            >
                 <h1>What's New</h1>
             </div>
 
-            <div className="flex items-center
-            rounded cursor-pointer hover:bg-slate-200 p-2 transition duration-300
-            ">
+            <div className="navbarStart"
+            >
                 <h1>Delivery</h1>
             </div>
 
@@ -39,8 +40,7 @@ const Navbar = () => {
                 </div>
             </div>
 
-            <div className="relative flex items-center
-            rounded cursor-pointer hover:bg-slate-200 p-2 transition duration-300
+            <div className="navbarStart
             ">
                 
                 <div>
@@ -51,7 +51,7 @@ const Navbar = () => {
 
                 <h1 className="pl-1">Account</h1>
             </div>
-            <div className="flex relative items-center
+            <div className="lg:hidden flex relative items-center
             rounded cursor-pointer hover:bg-slate-200 p-2 transition duration-300
             ">
                 <div>
@@ -61,6 +61,22 @@ const Navbar = () => {
                 </div>
 
                 <h1 className="pl-1">Cart</h1>
+            </div>
+
+            {/* Hamburger Icon */}
+            <div className='lg:hidden'>
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    className="w-6 h-6"
+                    >
+                    <path
+                        fillRule="evenodd"
+                        d="M3 4h14a1 1 0 010 2H3a1 1 0 010-2zm0 6h14a1 1 0 010 2H3a1 1 0 010-2zm0 6h14a1 1 0 010 2H3a1 1 0 010-2z"
+                        clipRule="evenodd"
+                    />
+                </svg>
             </div>
         </div>
      );
