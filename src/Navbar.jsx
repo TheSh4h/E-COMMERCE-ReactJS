@@ -68,7 +68,8 @@ const Navbar = () => {
                 </div>
 
                 {/* Hamburger Icon */}
-                <div className='lg:hidden'>
+                <div className='lg:hidden flex items-center
+                rounded cursor-pointer hover:bg-slate-200 p-2 transition duration-300'>
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
