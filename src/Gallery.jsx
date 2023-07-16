@@ -8,7 +8,7 @@ const Gallery = () => {
 
     <div className='flex justify-center mb-10'>
 
-        <div className='grid lg:grid-cols-4 md:grid-cols-2 gap-4 m-10'>
+        <div className='grid lg:grid-cols-4 sm:grid-cols-2 gap-4 m-10'>
 
             <div className='card'>
                 <div>
