@@ -5,7 +5,6 @@
 .navbarStart {
     @apply flex items-center
     rounded cursor-pointer hover:bg-slate-200 p-2 transition duration-300;
-    @apply hidden lg:block
 }
 
 .card{

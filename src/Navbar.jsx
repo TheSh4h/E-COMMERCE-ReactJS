@@ -1,9 +1,32 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Kart from './img/Kart.png';
 
 const Navbar = () => {
 
-    const [showMenu, setShowMenu] = useState(false);
+    const [showMenu, setShowMenu] = useState(true);
+
+    const toggleMenu = () => {
+        setShowMenu(!showMenu);
+    }
+
+    useEffect(() => {
+        //Function to update the showMenu state based on screen size
+        const handleScreenSize = () => {
+            if (window.innerWidth >= 1024) {
+                setShowMenu(true);
+            } else {
+                setShowMenu(false);
+            }
+        };
+
+        window.addEventListener('resize', handleScreenSize);
+
+        handleScreenSize();
+
+        return () => {
+            window.removeEventListener('resize', handleScreenSize);
+        }
+    }, []);
 
     return ( 
         <div className="flex justify-between items-center m-5 mt-1
@@ -13,7 +36,7 @@ const Navbar = () => {
                 <h1 className="text-3xl font-bold text-green-800">E-Kart</h1>
             </div>
 
-            <div className='flex'>
+            <div className={showMenu ? 'flex': 'hidden'}>
                     <div className="navbarStart"
                     >    
                         <h1>Deals</h1>
@@ -69,7 +92,9 @@ const Navbar = () => {
 
                 {/* Hamburger Icon */}
                 <div className='lg:hidden flex items-center
-                rounded cursor-pointer hover:bg-slate-200 p-2 transition duration-300'>
+                rounded cursor-pointer hover:bg-slate-200 p-2 transition duration-300'
+                onClick={toggleMenu}
+                >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
