@@ -1,4 +1,4 @@
-import Navbar from './Navbar';
+import Navbar from './Navbar/Navbar';
 import Gallery from './Gallery';
 import ProductList from './ProductList';
 import Footer from './Footer';

@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .navbarStart {
-    @apply flex items-center
+    @apply lg:flex items-center
     rounded cursor-pointer hover:bg-slate-200 p-2 transition duration-300;
 }
 
