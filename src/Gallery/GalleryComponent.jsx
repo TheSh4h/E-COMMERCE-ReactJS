@@ -1,13 +1,12 @@
-const GalleryComponent = (img) => {
+const GalleryComponent = ({img, css, title}) => {
 
     return ( 
         <div className='card'>
                 <div>
-                    <img src={img} alt="failed to load" className='object-cover object-left h-48 sm:h-96 w-full
-                    rounded-2xl'/>
+                    <img src={img} alt="failed to load" className={css}/>
                 </div>
                 <div className='badge'>
-                    <span className='font-semibold text-white'>Gym</span>
+                    <span className='font-semibold text-white'>{title}</span>
                 </div>
         </div>
      );
