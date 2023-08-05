@@ -1,4 +1,4 @@
-import ProductItem from './ProdectItem';
+import ProductItem from './ProductItem';
 import ps5 from './img/ps5.jpg';
 import bed from './img/bed.jpg';
 import hp from './img/hp.jpg';
@@ -8,7 +8,6 @@ import macbook from './img/macbook.jpg';
 import db from './img/db.jpg';
 import kb from './img/kb.jpg';
 import { useState, useEffect } from 'react';
-import data from './data/data.json';
 
 
 const ProductList = () => {
@@ -16,9 +15,12 @@ const ProductList = () => {
     const [products, setProducts] = useState([])
 
     useEffect(() => {
-        fetch('/data/data.json')
+        fetch('http://localhost:3004/products')
             .then(res => res.json())
-            .then(data => setProducts(data))
+            .then(data => {
+                setProducts(data)
+                console.log(data)
+            })
             .catch(err => console.log(err))
     }, []);
 
@@ -30,7 +32,7 @@ const ProductList = () => {
                 {products.map((product, index) => (
                     <ProductItem
                         key={index}
-                        image={product.image}
+                        image={`./img/${product.image}`}
                         title={product.title}
                         description={product.description}
                         price={product.price} 
@@ -44,3 +46,18 @@ const ProductList = () => {
 }
  
 export default ProductList;
+
+// Helper function to get the image URL based on the image name
+function getImageUrl(imageName) {
+    switch (imageName) {
+      case 'ps5': return ps5;
+      case 'bed': return bed;
+      case 'hp': return hp;
+      case 'hp2': return hp2;
+      case 'aot': return aot;
+      case 'macbook': return macbook;
+      case 'db': return db;
+      case 'kb': return kb;
+      default: return '';
+    }
+  }
