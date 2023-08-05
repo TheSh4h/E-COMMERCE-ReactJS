@@ -7,19 +7,20 @@ import aot from './img/aot.jpg';
 import macbook from './img/macbook.jpg';
 import db from './img/db.jpg';
 import kb from './img/kb.jpg';
+import { useState, useEffect } from 'react';
+import data from './data/data.json';
 
 
 const ProductList = () => {
 
-    const products = [
-        { image: ps5, title:'PlayStation 5', description: 'Description goes here', price: '$500', tag: 'USD' },
-        { image: aot, title:'Attack on Titan Manga', description: 'Attack on Titan Manga', price: '$15.99', tag: 'USD' },
-        { image: hp2, title:'Headphone', description: 'Description goes here', price: '$150.99', tag: 'USD' },
-        { image: hp, title:'Audionic Headphone', description: 'Description goes here', price: '$250.99', tag: 'USD' },
-        { image: macbook, title:'Apple Macbook Air M1', description: 'Description goes here', price: '$1500', tag: 'USD' },
-        { image: db, title:'Hex Dumbells', description: 'Description goes here', price: '$49.99', tag: 'USD' },
-        { image: kb, title:'Kettlebell 32kg', description: 'Description goes here', price: '$80.00', tag: 'USD' },       
-    ]
+    const [products, setProducts] = useState([])
+
+    useEffect(() => {
+        fetch('/data/data.json')
+            .then(res => res.json())
+            .then(data => setProducts(data))
+            .catch(err => console.log(err))
+    }, []);
 
     return ( 
         <div className='m-10'>
