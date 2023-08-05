@@ -46,18 +46,3 @@ const ProductList = () => {
 }
  
 export default ProductList;
-
-// Helper function to get the image URL based on the image name
-function getImageUrl(imageName) {
-    switch (imageName) {
-      case 'ps5': return ps5;
-      case 'bed': return bed;
-      case 'hp': return hp;
-      case 'hp2': return hp2;
-      case 'aot': return aot;
-      case 'macbook': return macbook;
-      case 'db': return db;
-      case 'kb': return kb;
-      default: return '';
-    }
-  }
