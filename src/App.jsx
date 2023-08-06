@@ -6,14 +6,14 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 function App() {
   return (
-    <div>
-      <Router>
-        <Navbar/>
-        <Gallery/>
-        <ProductList/>
-        <Footer/>
-      </Router>
-    </div>
+    <Router>
+      <div>
+          <Navbar/>
+          <Gallery/>
+          <ProductList/>
+          <Footer/> 
+      </div>
+    </Router>
   );
 }
 
