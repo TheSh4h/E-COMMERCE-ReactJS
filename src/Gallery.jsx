@@ -1,7 +1,7 @@
-import books from './img/books.jpg';
-import furniture from './img/furniture.jpg';
-import gym from './img/gym.jpg';
-import console from './img/console.jpg';
+import books from '/img/books.jpg';
+import furniture from '/img/furniture.jpg';
+import gym from '/img/gym.jpg';
+import console from '/img/console.jpg';
 
 const Gallery = () => {
     return ( 

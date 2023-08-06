@@ -1,12 +1,4 @@
 import ProductItem from './ProductItem';
-import ps5 from './img/ps5.jpg';
-import bed from './img/bed.jpg';
-import hp from './img/hp.jpg';
-import hp2 from './img/hp2.jpg';
-import aot from './img/aot.jpg';
-import macbook from './img/macbook.jpg';
-import db from './img/db.jpg';
-import kb from './img/kb.jpg';
 import { useState, useEffect } from 'react';
 
 
