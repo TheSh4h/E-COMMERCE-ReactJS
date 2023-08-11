@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 import useFetch from '../useFetch';
 
 const Gallery = () => {
-    const { loading, products, error } = useFetch('http://localhost:4000/GalleryItems');
+    const { loading, data, error } = useFetch('http://localhost:4000/GalleryItems');
     
     return ( 
 
@@ -18,7 +18,7 @@ const Gallery = () => {
             {loading && <p>Loading...</p>}
             {error && <p>Failed to load resources</p>}
 
-            {products.map((category, index) => (
+            {data.map((category, index) => (
                 <Link to={`/${category.title}`}>
                     <GalleryComponent
                     key={index}
