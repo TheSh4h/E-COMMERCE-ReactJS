@@ -1,4 +1,22 @@
 {
+  "GalleryItems": [
+    {
+        "img": "gym.jpg",
+        "title": "Gym"
+    },
+    {
+        "img": "books.jpg",
+        "title": "Books"
+    },
+    {
+        "img": "furniture.jpg",
+        "title": "Furniture"
+    },
+    {
+        "img": "console.jpg",
+        "title": "Electronics"
+    }
+],
  "products": [
     {
       "image": "ps5.jpg",
