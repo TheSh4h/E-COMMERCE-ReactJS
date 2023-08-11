@@ -7,10 +7,10 @@ import { Link } from 'react-router-dom';
 
 const Gallery = () => {
     const categories = [
-        { img: gym, title: 'Gym', css: 'object-cover object-left h-48 sm:h-96 w-full rounded-2xl'},
-        { img: books, title: 'Books', css: 'object-cover object-center h-48 sm:h-96 w-full rounded-2xl'},
-        { img: furniture, title: 'Furniture', css: 'object-cover object-center h-48 sm:h-96 w-full rounded-2xl'},
-        { img: console, title: 'Electronics', css: 'object-cover object-center h-48 sm:h-96 w-full rounded-2xl'},
+        { img: gym, title: 'Gym'},
+        { img: books, title: 'Books'},
+        { img: furniture, title: 'Furniture'},
+        { img: console, title: 'Electronics'},
     ]
     return ( 
 
@@ -19,15 +19,12 @@ const Gallery = () => {
         <div className='grid lg:grid-cols-4 sm:grid-cols-2 gap-4 m-10'>
 
             {categories.map((category, index) => (
-                <Link to={category.title.toString()}>
-                    {
-                        <GalleryComponent
-                        key={index}
-                        img={category.img}
-                        css={category.css}
-                        title={category.title}
-                        />
-                    }
+                <Link to={`/${category.title}`}>
+                    <GalleryComponent
+                    key={index}
+                    img={category.img}
+                    title={category.title}
+                    />
                 </Link>
             ))}
             
