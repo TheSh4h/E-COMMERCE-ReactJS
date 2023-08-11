@@ -3,6 +3,7 @@ import furniture from '../img/furniture.jpg';
 import gym from '../img/gym.jpg';
 import console from '../img/console.jpg';
 import GalleryComponent from './GalleryComponent';
+import { Link } from 'react-router-dom';
 
 const Gallery = () => {
     const categories = [
@@ -18,12 +19,16 @@ const Gallery = () => {
         <div className='grid lg:grid-cols-4 sm:grid-cols-2 gap-4 m-10'>
 
             {categories.map((category, index) => (
-                <GalleryComponent
-                key={index}
-                img={category.img}
-                css={category.css}
-                title={category.title}
-                />
+                <Link to={category.title.toString()}>
+                    {
+                        <GalleryComponent
+                        key={index}
+                        img={category.img}
+                        css={category.css}
+                        title={category.title}
+                        />
+                    }
+                </Link>
             ))}
             
         </div>
