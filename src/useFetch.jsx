@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 const useFetch = (url) => {
     const [loading, setLoading] = useState(true);
-    const [products, setProducts] = useState([]);
+    const [data, setData] = useState([]);
     const [error, setError] = useState(null);
 
     useEffect(() => {
@@ -16,7 +16,7 @@ const useFetch = (url) => {
                 return res.json();
             })
             .then(data => {
-                setProducts(data)
+                setData(data)
                 setLoading(false)
                 setError(false)
                 console.log(data)
@@ -28,7 +28,7 @@ const useFetch = (url) => {
         }, 5000);
     }, [url]);
 
-    return { loading, products, error };
+    return { loading, data, error };
 }
  
 export default useFetch;

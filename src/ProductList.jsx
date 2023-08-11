@@ -5,7 +5,7 @@ import useFetch from './useFetch';
 
 const ProductList = () => {
 
-    const { loading, products, error } = useFetch('http://localhost:4000/products');
+    const { loading, data, error } = useFetch('http://localhost:4000/products');
 
     return ( 
         <div className='m-10'>
@@ -15,7 +15,7 @@ const ProductList = () => {
                 {loading && <p>Loading...</p>}
                 {error && <p>Failed to load resources</p>}
 
-                {products.map((product, index) => (
+                {data.map((product, index) => (
                     <ProductItem
                         key={index}
                         image={`./img/${product.image}`}
