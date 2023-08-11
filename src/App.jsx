@@ -1,19 +1,19 @@
-import Navbar from './Navbar/Navbar';
-import Gallery from './Gallery/Gallery';
-import ProductList from './ProductList';
-import Footer from './Footer';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
+import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
+import RootLayout from './layout/RootLayout';
+import Home from './Home/Home';
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path='/' element={<RootLayout />}>
+      <Route index element={<Home />} />
+    </Route>
+  )
+)
 
 function App() {
   return (
-    <Router>
-      <div>
-          <Navbar/>
-          <Gallery/>
-          <ProductList/>
-          <Footer/> 
-      </div>
-    </Router>
+      <RouterProvider router={router} />
   );
 }
 
