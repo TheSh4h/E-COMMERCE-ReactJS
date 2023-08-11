@@ -1,25 +1,19 @@
 import ProductItem from './ProductItem';
 import { useState, useEffect } from 'react';
+import useFetch from './useFetch';
 
 
 const ProductList = () => {
 
-    const [products, setProducts] = useState([])
-
-    useEffect(() => {
-        fetch('http://localhost:4000/products')
-            .then(res => res.json())
-            .then(data => {
-                setProducts(data)
-                console.log(data)
-            })
-            .catch(err => console.log(err))
-    }, []);
+    const { loading, products, error } = useFetch('http://localhost:4000/products');
 
     return ( 
         <div className='m-10'>
             <h1 className='font-semibold text-xl'>Top picks for you!</h1>
             <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-4 mt-10">
+                
+                {loading && <p>Loading...</p>}
+                {error && <p>Failed to load resources</p>}
 
                 {products.map((product, index) => (
                     <ProductItem
