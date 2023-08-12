@@ -80,7 +80,7 @@ const Navbar = () => {
             </div>
             {showMenu && (
             <div className="lg:hidden top-0 right-0 bg-gray-700 text-white py-2 px-4 shadow-lg
-            flex-col">
+            flex items-center justify-center">
               <div className='m-10 mt-5 mb-5'>
                 {/* Dropdown menu items */}
                 <NavbarCenter/>
