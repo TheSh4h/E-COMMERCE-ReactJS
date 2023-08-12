@@ -1,5 +1,5 @@
 import TopPicksItem from './TopPicksItem';
-import useFetch from './useFetch';
+import useFetch from '../useFetch';
 import { Link } from 'react-router-dom';
 
 
