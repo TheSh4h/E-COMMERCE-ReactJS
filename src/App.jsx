@@ -2,13 +2,21 @@
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
 import RootLayout from './layout/RootLayout';
 import Home from './pages/Home';
+import Gym from './pages/Category Pages/Gym';
+import Books from './pages/Category Pages/Books';
+import Furniture from './pages/Category Pages/Furniture';
+import Electronics from './pages/Category Pages/Electronics';
 import ItemList from './pages/ItemList';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<RootLayout />}>
       <Route index element={<Home />} />
-      <Route path=':title' element={<ItemList />} />
+      <Route to='Gym' element={<Gym />} />
+      <Route to='Books' element={<Books />} />
+      <Route to='Furniture' element={<Furniture />} />
+      <Route to='Electronics' element={<Electronics />} />
+      {/* <Route path=':title' element={<ItemList />} /> */}
     </Route>
   )
 )

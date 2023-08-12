@@ -1,4 +1,4 @@
-import Category from "../Gallery/Category";
+import Category from "../Category/Category";
 import TopPicks from "../TopPicks/TopPicks";
 
 const Home = () => {
