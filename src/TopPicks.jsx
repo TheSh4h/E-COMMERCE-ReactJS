@@ -1,10 +1,9 @@
-import ProductItem from './ProductItem';
-import { useState, useEffect } from 'react';
+import TopPicksItem from './TopPicksItem';
 import useFetch from './useFetch';
 import { Link } from 'react-router-dom';
 
 
-const ProductList = () => {
+const TopPicks = () => {
 
     const { loading, data, error } = useFetch('http://localhost:4000/products/');
 
@@ -18,7 +17,7 @@ const ProductList = () => {
 
                 {data.map((product, index) => (
                     <Link to={product.title.toString()} key={index}>
-                        <ProductItem
+                        <TopPicksItem
                             key={index}
                             image={`./img/${product.image}`}
                             title={product.title}
@@ -34,4 +33,4 @@ const ProductList = () => {
      );
 }
  
-export default ProductList;
+export default TopPicks;

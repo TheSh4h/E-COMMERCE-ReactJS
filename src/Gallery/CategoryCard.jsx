@@ -1,5 +1,5 @@
 
-const GalleryComponent = ({img, title}) => {
+const CategoryCard = ({img, title}) => {
     return ( 
         <div className='card'>
                 <div>
@@ -15,4 +15,4 @@ const GalleryComponent = ({img, title}) => {
      );
 }
  
-export default GalleryComponent;
+export default CategoryCard;

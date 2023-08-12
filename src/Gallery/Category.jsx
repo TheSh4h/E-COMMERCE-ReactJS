@@ -2,10 +2,10 @@ import books from '../img/books.jpg';
 import furniture from '../img/furniture.jpg';
 import gym from '../img/gym.jpg';
 import console from '../img/console.jpg';
-import GalleryComponent from './GalleryComponent';
 import { Link } from 'react-router-dom';
+import CategoryCard from './CategoryCard';
 
-const Gallery = () => {
+const Category = () => {
     const categories = [
         { img: gym, title: 'Gym'},
         { img: books, title: 'Books'},
@@ -20,7 +20,7 @@ const Gallery = () => {
 
             {categories.map((category, index) => (
                 <Link to={`/${category.title}`}>
-                    <GalleryComponent
+                    <CategoryCard
                     key={index}
                     img={category.img}
                     title={category.title}
@@ -35,4 +35,4 @@ const Gallery = () => {
     );
 }
  
-export default Gallery;
+export default Category;
