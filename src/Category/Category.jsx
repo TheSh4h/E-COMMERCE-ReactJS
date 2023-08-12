@@ -19,7 +19,7 @@ const Category = () => {
         <div className='grid lg:grid-cols-4 sm:grid-cols-2 gap-4 m-10'>
 
             {categories.map((category, index) => (
-                <Link to={`/${category.title}`}>
+                <Link to={`/${category.title}`} key={index}>
                     <CategoryCard
                     key={index}
                     img={category.img}
