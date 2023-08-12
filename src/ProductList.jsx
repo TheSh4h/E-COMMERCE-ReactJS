@@ -1,11 +1,12 @@
 import ProductItem from './ProductItem';
 import { useState, useEffect } from 'react';
 import useFetch from './useFetch';
+import { Link } from 'react-router-dom';
 
 
 const ProductList = () => {
 
-    const { loading, data, error } = useFetch('http://localhost:4000/products');
+    const { loading, data, error } = useFetch('http://localhost:4000/products/');
 
     return ( 
         <div className='m-10'>
@@ -16,14 +17,16 @@ const ProductList = () => {
                 {error && <p>Failed to load resources</p>}
 
                 {data.map((product, index) => (
-                    <ProductItem
-                        key={index}
-                        image={`./img/${product.image}`}
-                        title={product.title}
-                        description={product.description}
-                        price={product.price} 
-                        tag={product.tag} 
-                    />
+                    <Link to={product.title.toString()} key={index}>
+                        <ProductItem
+                            key={index}
+                            image={`./img/${product.image}`}
+                            title={product.title}
+                            description={product.description}
+                            price={product.price} 
+                            tag={product.tag} 
+                        />
+                    </Link>
                 ))}
 
             </div>
