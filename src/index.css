@@ -23,8 +23,3 @@
 .itemBadge {
     @apply absolute top-0 left-2 bg-white rounded-lg p-1 mt-1 text-green-950;
 }
-
-.itemImage {
-    height: 480px;
-    width: 720px;
-}
