@@ -6,19 +6,26 @@ import { useContext } from 'react';
 import { CartContext } from '../context/cart-display-context';
 
 const RootLayout = () => {
-    const { showCart } = useContext(CartContext);
+    const { showCart, setShowCart } = useContext(CartContext);
     
     return ( 
         <div>
-            <header>
-                <nav>
-                    <Navbar/>
-                </nav>
-            </header>
-            <main>
-                <Outlet />
-            </main>
+            <div className={`${showCart ? "opacity-25" : null }`}>
+                <header>
+                    <nav>
+                        <Navbar/>
+                    </nav>
+                </header>
+                <div onClick={() => setShowCart(false)}>
+                    <main>
+                        <Outlet />
+                    </main>
 
+                    <footer>
+                        <Footer />
+                    </footer>
+                </div>
+            </div>
 {showCart && 
             <aside>
                 <div className="flex justify-end">
@@ -26,9 +33,6 @@ const RootLayout = () => {
                 </div>
             </aside>
 }
-            <footer>
-                <Footer />
-            </footer> 
       </div>
      );
 }

@@ -14,6 +14,7 @@ const CartContextProvider = (props) => {
 
     const contextValue = {
         showCart,
+        setShowCart,
         toggleCartMenu
     };
 
