@@ -7,6 +7,7 @@ import Books from './pages/Category Pages/Books';
 import Furniture from './pages/Category Pages/Furniture';
 import Electronics from './pages/Category Pages/Electronics';
 import ItemList from './pages/ItemList';
+import CartContextProvider from './context/cart-display-context';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -23,7 +24,9 @@ const router = createBrowserRouter(
 
 function App() {
   return (
-      <RouterProvider router={router} />
+    <CartContextProvider>
+        <RouterProvider router={router} />
+    </CartContextProvider>
   );
 }
 

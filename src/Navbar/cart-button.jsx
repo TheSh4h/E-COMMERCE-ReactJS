@@ -1,11 +1,8 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { CartContext } from "../context/cart-display-context";
 
 const CartButton = () => {
-    const [showCart, setShowCart] = useState(false);
-    const toggleCartMenu = () => {
-        setShowCart(!showCart);
-    }
-    console.log(showCart)
+    const { toggleCartMenu} = useContext(CartContext);
     return ( 
         <div onClick={toggleCartMenu} className="flex relative items-center
             rounded cursor-pointer hover:bg-slate-200 p-2 transition duration-300">
