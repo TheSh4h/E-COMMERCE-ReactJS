@@ -1,6 +1,13 @@
+import { useState } from "react";
+
 const CartButton = () => {
+    const [showCart, setShowCart] = useState(false);
+    const toggleCartMenu = () => {
+        setShowCart(!showCart);
+    }
+    console.log(showCart)
     return ( 
-        <div className="flex relative items-center
+        <div onClick={toggleCartMenu} className="flex relative items-center
             rounded cursor-pointer hover:bg-slate-200 p-2 transition duration-300">
             <div>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
