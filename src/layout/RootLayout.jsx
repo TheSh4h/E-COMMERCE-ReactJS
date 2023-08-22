@@ -1,39 +1,42 @@
 import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer';
-import { Outlet } from 'react-router-dom';
+import { Outlet, useLocation } from 'react-router-dom';
 import Cart from '../Cart/Cart';
-import { useContext } from 'react';
+import { useContext, useEffect } from 'react';
 import { CartContext } from '../context/cart-display-context';
+import ScrollToTop from '../ScrollToTop';
 
 const RootLayout = () => {
     const { showCart, setShowCart } = useContext(CartContext);
     
-    return ( 
-        <div>
-            <div className={`${showCart ? "opacity-25" : null }`}>
-                <header>
-                    <nav>
-                        <Navbar/>
-                    </nav>
-                </header>
-                <div onClick={() => setShowCart(false)}>
-                    <main>
-                        <Outlet />
-                    </main>
+    return (
+        <ScrollToTop> 
+            <div>
+                <div className={`${showCart ? "opacity-25" : null }`}>
+                    <header>
+                        <nav>
+                            <Navbar/>
+                        </nav>
+                    </header>
+                    <div onClick={() => setShowCart(false)}>
+                        <main className="mt-20">
+                            <Outlet />
+                        </main>
 
-                    <footer>
-                        <Footer />
-                    </footer>
+                        <footer>
+                            <Footer />
+                        </footer>
+                    </div>
                 </div>
-            </div>
-{showCart && 
-            <aside>
-                <div className="flex justify-end">
-                    <Cart />
-                </div>
-            </aside>
-}
-      </div>
+    {showCart && 
+                <aside>
+                    <div className="flex justify-end">
+                        <Cart />
+                    </div>
+                </aside>
+    }
+        </div>
+      </ScrollToTop>
      );
 }
  
