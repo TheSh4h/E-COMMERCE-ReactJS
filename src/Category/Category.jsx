@@ -14,7 +14,7 @@ const Category = () => {
     ]
     return ( 
 
-    <div className='flex justify-center mb-10'>
+    <div className='flex justify-center mb-10 z-0'>
 
         <div className='grid lg:grid-cols-4 sm:grid-cols-2 gap-4 m-10'>
 
