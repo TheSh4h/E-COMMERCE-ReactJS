@@ -73,7 +73,7 @@ const ItemList = () => {
                     text-white font-semibold
                     hover:bg-white hover:text-green-950 active:bg-white border-green-950 border
                      transition duration-200 delay-100">
-                        <button className="px-4 py-4">Buy Now</button>
+                        <button className="px-4 py-4 w-full">Buy Now</button>
                     </div>
                     <div className="flex items-center justify-center ml-1
                      bg-white h-18 w-40 md:w-72 rounded-full
@@ -81,7 +81,7 @@ const ItemList = () => {
                      border-green-950 border
                      active:text-white active:bg-green-950
                      transition duration-200">
-                        <button className="px-4 py-4"> Add to Cart</button>
+                        <button className="px-4 py-4 w-full"> Add to Cart</button>
                     </div>
                 </div>
 
