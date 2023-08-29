@@ -5,18 +5,17 @@ export const CartContext = createContext(null);
 function reducer(cartItems, action) {
     switch(action.type) {
         case 'ADD_TO_CART':
-            const itemToAdd = action.payload
-            let itemExists = false
+            const itemToAdd = action.payload;
+            let itemExists = cartItems.find(item =>
+                item.id === itemToAdd.id && item.title === itemToAdd.title
+            );
 
-            for(const item of cartItems) {
-                if (item.id === itemToAdd.id && item.title === itemToAdd.title) {
-                    itemExists = true
-                }
-            }
             if(!itemExists){
                 return [...cartItems, newItem(itemToAdd)];
+            } else {
+                console.log('item already exists')
             }
-            
+
             return cartItems;
 
         case 'UPDATE_QUANTITY':
