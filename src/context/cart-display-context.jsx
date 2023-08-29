@@ -7,7 +7,7 @@ function reducer(cartItems, action) {
         case 'ADD_TO_CART':
             return [...cartItems, newItem(action.payload)];
         case 'UPDATE_QUANTITY':
-            cartItems.map(item => {
+            return cartItems.map(item => {
                 if ((item.title === action.payload.title) && (item.id === action.payload.id)) {
                     return { ...item, quantity: action.payload.quantity };
                 }

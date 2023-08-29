@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { CartContext } from "../context/cart-display-context";
 
 const CartItems = ({ id, image, title, price, quantity }) => {
@@ -21,16 +21,21 @@ const CartItems = ({ id, image, title, price, quantity }) => {
         
         if(!isNaN(newQuantity) && newQuantity >= 1 ) {
             setItemQuantity(newQuantity)
-            dispatch({
-                type: 'UPDATE_QUANTITY',
-                payload: { id: id , title: title, quantity: newQuantity }
-            })
         }
         else {
             // Handle non-numeric input or input less than 1
-            setItemQuantity("");
+            setItemQuantity(null);
         }
     }
+
+    function change(quantity) {
+        dispatch({
+            type: 'UPDATE_QUANTITY',
+            payload: { id: id , title: title, quantity: quantity }
+        })
+    }
+
+    useEffect(() => itemQuantity !== "" ? change(itemQuantity) : null, [itemQuantity])
 
     return ( 
         <>
