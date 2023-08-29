@@ -1,8 +1,11 @@
 import { useParams } from "react-router-dom";
 import useFetch from "../useFetch";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { CartContext } from "../context/cart-display-context";
 
 const ItemList = () => {
+    const { dispatch } = useContext(CartContext)
+    
     const { id } = useParams(); //renders with the path name
     const url = 'http://localhost:4000/products/' + id;
     const {loading, data, error} = useFetch(url);
@@ -75,7 +78,9 @@ const ItemList = () => {
                      transition duration-200 delay-100">
                         <button className="px-4 py-4 w-full">Buy Now</button>
                     </div>
-                    <div className="flex items-center justify-center ml-1
+                    <div onClick={() => 
+                    dispatch({ type: 'ADD_TO_CART', payload: {id: data.id, title: data.title, quantity: count, image: data.image, price: data.price} })}
+                    className="flex items-center justify-center ml-1
                      bg-white h-18 w-40 md:w-72 rounded-full
                      text-green-950 font-semibold
                      border-green-950 border
