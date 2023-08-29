@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import { CartContext } from "../context/cart-display-context";
 
-const CartItems = ({ id, image, title, price, quantity }) => {
+const CartItems = ({ key, image, title, price, quantity }) => {
     const { dispatch } = useContext(CartContext)
 
     const [itemQuantity, setItemQuantity] = useState(quantity);
@@ -31,7 +31,7 @@ const CartItems = ({ id, image, title, price, quantity }) => {
     function change(quantity) {
         dispatch({
             type: 'UPDATE_QUANTITY',
-            payload: { id: id , title: title, quantity: quantity }
+            payload: { id: key, title: title, quantity: quantity }
         })
     }
 
