@@ -5,7 +5,20 @@ export const CartContext = createContext(null);
 function reducer(cartItems, action) {
     switch(action.type) {
         case 'ADD_TO_CART':
-            return [...cartItems, newItem(action.payload)];
+            const itemToAdd = action.payload
+            let itemExists = false
+
+            for(const item of cartItems) {
+                if (item.id === itemToAdd.id && item.title === itemToAdd.title) {
+                    itemExists = true
+                }
+            }
+            if(!itemExists){
+                return [...cartItems, newItem(itemToAdd)];
+            }
+            
+            return cartItems;
+
         case 'UPDATE_QUANTITY':
             return cartItems.map(item => {
                 if ((item.title === action.payload.title) && (item.id === action.payload.id)) {
