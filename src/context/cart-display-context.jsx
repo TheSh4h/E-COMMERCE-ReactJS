@@ -25,6 +25,11 @@ function reducer(cartItems, action) {
                 }
                 return item;
             });
+
+        case 'REMOVE_FROM_CART':
+            return cartItems.filter(item =>
+                item.id !== action.payload.id && item.title !== action.payload.title)
+
         default:
             return cartItems;
     }

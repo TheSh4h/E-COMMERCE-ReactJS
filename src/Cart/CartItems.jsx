@@ -66,6 +66,11 @@ const CartItems = ({ id, image, title, price, quantity }) => {
                         +
                     </button>
                 </div>
+                <button onClick={() => dispatch({ type: 'REMOVE_FROM_CART', payload: { id: id, title: title } })}
+                className="bg-black text-white font-semibold p-1 rounded-lg mt-2
+                hover:bg-slate-600 transition delay-75 px-5 py-1">
+                    Delete Item
+                </button>
             </div>
         </div>
         </>
