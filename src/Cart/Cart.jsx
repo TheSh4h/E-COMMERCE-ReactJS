@@ -26,6 +26,10 @@ const Cart = () => {
                 quantity={item.quantity}
                 />
             ))}
+            <div className="flex justify-center">
+                <button className="bg-black text-white font-semibold rounded-3xl 
+                px-4 py-2 hover:bg-white hover:text-black transition delay-100">Checkout</button>
+            </div>
         </div>
      );
 }
