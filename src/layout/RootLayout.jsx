@@ -30,9 +30,7 @@ const RootLayout = () => {
                 </div>
     {showCart && 
                 <aside>
-                    <div className="flex justify-end">
-                        <Cart />
-                    </div>
+                    <Cart />
                 </aside>
     }
         </div>
