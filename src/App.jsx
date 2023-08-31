@@ -8,11 +8,13 @@ import Furniture from './pages/Category Pages/Furniture';
 import Electronics from './pages/Category Pages/Electronics';
 import ItemList from './pages/ItemList';
 import CartContextProvider from './context/cart-display-context';
+import Account from './pages/Account';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<RootLayout />}>
       <Route index element={<Home />} />
+      <Route path='account' element={<Account />} />
       <Route path='Gym' element={<Gym />} />
       <Route path='Books' element={<Books />} />
       <Route path='Furniture' element={<Furniture />} />
