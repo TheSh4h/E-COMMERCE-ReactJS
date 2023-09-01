@@ -5,8 +5,8 @@ import CartItems from "./CartItems"
 const Cart = () => {
     const { toggleCartMenu, cartItems } = useContext(CartContext)
     return ( 
-        <div className="bg-white w-1/4 h-full fixed top-0 p-1">
-            <div className="flex justify-end">
+        <div className="bg-white lg:w-1/4 md:w-1/3 w-full h-full fixed top-0 p-1">
+            <div className="flex justify-start">
                 <button onClick={toggleCartMenu} className="h-8 w-8 cursor-pointer">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />

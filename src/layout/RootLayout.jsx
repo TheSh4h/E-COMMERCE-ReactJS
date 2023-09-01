@@ -1,8 +1,8 @@
 import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer';
-import { Outlet, useLocation } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
 import Cart from '../Cart/Cart';
-import { useContext, useEffect } from 'react';
+import { useContext } from 'react';
 import { CartContext } from '../context/cart-display-context';
 import ScrollToTop from '../ScrollToTop';
 
@@ -29,7 +29,7 @@ const RootLayout = () => {
                     </div>
                 </div>
     {showCart && 
-                <aside>
+                <aside className='flex justify-end'>
                     <Cart />
                 </aside>
     }
