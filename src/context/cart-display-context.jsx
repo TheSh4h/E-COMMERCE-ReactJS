@@ -48,15 +48,27 @@ const CartContextProvider = (props) => {
         setShowCart(!showCart);
     }
 
+    
+    const getTotalPrice = (cartItems) => {
+        let totalPrice = 0;
+        
+        for (const item of cartItems) {
+            totalPrice += item.price * item.quantity;
+        }
+        
+        return totalPrice;
+    }
+    
     const contextValue = {
         showCart,
         setShowCart,
         toggleCartMenu,
+        getTotalPrice,
         cartItems,
         dispatch
     };
 
-    console.log(cartItems)
+    // console.log(cartItems)
 
     return ( 
         <CartContext.Provider value={contextValue}>

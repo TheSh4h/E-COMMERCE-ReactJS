@@ -3,7 +3,7 @@ import { CartContext } from "../context/cart-display-context";
 import CartItems from "./CartItems"
 
 const Cart = () => {
-    const { toggleCartMenu, cartItems } = useContext(CartContext)
+    const { toggleCartMenu, cartItems, getTotalPrice } = useContext(CartContext)
     return ( 
         <div className="bg-white lg:w-1/4 md:w-1/3 w-full h-full fixed top-0 p-1 overflow-scroll">
             <div className="flex justify-start">
@@ -27,8 +27,14 @@ const Cart = () => {
                 />
             ))}
             <div className="flex justify-center mt-5">
-                <button className="bg-black text-white font-semibold rounded-3xl 
-                px-20 py-4 hover:bg-white hover:text-black transition delay-100">Checkout</button>
+                <div>
+                    <p className="mb-2 text-lg">
+                        <span className="font-semibold pr-1">Total:</span> 
+                        ${getTotalPrice(cartItems)}
+                    </p>
+                    <button className="bg-green-950 border border-green-950 text-white font-semibold rounded-3xl 
+                    px-20 py-4 hover:bg-white hover:text-black transition duration-300">Checkout</button>
+                </div>
             </div>
         </div>
      );

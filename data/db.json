@@ -23,7 +23,7 @@
       "image": "ps5.jpg",
       "title": "PlayStation 5",
       "description": "Description goes here",
-      "price": "$500",
+      "price": "500",
       "tag": "USD"
     },
     {
@@ -31,7 +31,7 @@
       "image": "aot.jpg",
       "title": "Attack on Titan Manga",
       "description": "Attack on Titan Manga",
-      "price": "$15.99",
+      "price": "15.99",
       "tag": "USD"
     },
     {
@@ -39,7 +39,7 @@
       "image": "hp2.jpg",
       "title": "Headphone",
       "description": "Description goes here",
-      "price": "$150.99",
+      "price": "150.99",
       "tag": "USD"
     },
     {
@@ -47,7 +47,7 @@
       "image": "hp.jpg",
       "title": "Audionic Headphone",
       "description": "Description goes here",
-      "price": "$250.99",
+      "price": "250.99",
       "tag": "USD"
     },
     {
@@ -55,7 +55,7 @@
       "image": "macbook.jpg",
       "title": "Apple Macbook Air M1",
       "description": "Description goes here",
-      "price": "$1500",
+      "price": "1500",
       "tag": "USD"
     },
     {
@@ -63,7 +63,7 @@
       "image": "db.jpg",
       "title": "Hex Dumbells",
       "description": "Description goes here",
-      "price": "$49.99",
+      "price": "49.99",
       "tag": "USD"
     },
     {
@@ -71,7 +71,7 @@
       "image": "kb.jpg",
       "title": "Kettlebell 32kg",
       "description": "Description goes here",
-      "price": "$80.00",
+      "price": "80.00",
       "tag": "USD"
     }
 ]
