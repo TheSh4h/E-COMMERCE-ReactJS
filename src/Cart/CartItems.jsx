@@ -45,7 +45,7 @@ const CartItems = ({ id, image, title, price, quantity }) => {
             </div>
             <div className="ml-4">
                 <h1 className="text-lg font-semibold">{title}</h1>
-                <h2 className="text-gray-600">{price}</h2>
+                <h2 className="text-gray-600">${price}</h2>
                 <div className="flex items-center mt-2">
                     <button
                         className="bg-blue-500 text-white px-2 py-1 rounded hover:bg-blue-600"

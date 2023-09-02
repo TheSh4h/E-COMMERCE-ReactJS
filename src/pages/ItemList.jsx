@@ -41,7 +41,7 @@ const ItemList = () => {
 
                 {/* Price Panel */}
                 <div className="border-gray-100 p-5 border-b-4">
-                    <h1 className="font-semibold text-2xl mb-2">{data.price} or 99.99/month</h1>
+                    <h1 className="font-semibold text-2xl mb-2">${data.price} or 99.99/month</h1>
                     <p className="text-slate-500 text-xs font-semibold">Suggested payment with 6 month special financing</p>
                 </div>
 
