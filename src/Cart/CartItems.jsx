@@ -46,12 +46,14 @@ const CartItems = ({ id, image, title, price, quantity }) => {
             <div className="ml-4">
                 <h1 className="text-lg font-semibold">{title}</h1>
                 <h2 className="text-gray-600">${price}</h2>
-                <div className="flex items-center mt-2">
+                <div className="flex items-center mt-2 bg-slate-200 rounded-r-2xl rounded-s-2xl">
                     <button
-                        className="bg-blue-500 text-white px-2 py-1 rounded hover:bg-blue-600"
+                        className="px-2 py-1 rounded"
                         onClick={decreaseQuantity}
                     >
-                        -
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 12h-15" />
+                        </svg>
                     </button>
                     <input
                         type="text"
@@ -60,10 +62,12 @@ const CartItems = ({ id, image, title, price, quantity }) => {
                         onChange={handleQuantityChange}
                     />
                     <button
-                        className="bg-blue-500 text-white px-2 py-1 rounded hover:bg-blue-600"
+                        className="px-2 py-1 rounded"
                         onClick={increaseQuantity}
                     >
-                        +
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                        </svg>
                     </button>
                 </div>
                 <button onClick={() => dispatch({ type: 'REMOVE_FROM_CART', payload: { id: id, title: title } })}
