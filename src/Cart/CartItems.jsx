@@ -46,9 +46,9 @@ const CartItems = ({ id, image, title, price, quantity }) => {
             <div className="ml-4">
                 <h1 className="text-lg font-semibold">{title}</h1>
                 <h2 className="text-gray-600">${price}</h2>
-                <div className="flex items-center mt-2 bg-slate-200 rounded-r-2xl rounded-s-2xl">
+                <div className="flex items-center mt-2 rounded-s-2xl">
                     <button
-                        className="px-2 py-1 rounded"
+                        className="bg-slate-200 hover:bg-slate-400 transition duration-300 rounded-l-2xl px-2 py-1"
                         onClick={decreaseQuantity}
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
@@ -62,7 +62,7 @@ const CartItems = ({ id, image, title, price, quantity }) => {
                         onChange={handleQuantityChange}
                     />
                     <button
-                        className="px-2 py-1 rounded"
+                        className="bg-slate-200 hover:bg-slate-400 transition duration-300 rounded-r-2xl px-2 py-1 rounded"
                         onClick={increaseQuantity}
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
@@ -71,8 +71,8 @@ const CartItems = ({ id, image, title, price, quantity }) => {
                     </button>
                 </div>
                 <button onClick={() => dispatch({ type: 'REMOVE_FROM_CART', payload: { id: id, title: title } })}
-                className="bg-green-950 text-white font-semibold p-1 rounded-lg mt-2
-                hover:bg-white hover:text-black border border-green-950 transition delay-75 px-5 py-1">
+                className="bg-green-950 text-white font-semibold p-1 rounded-2xl mt-2
+                hover:bg-white hover:text-black border border-green-950 transition duration-300 px-5 py-1">
                     Delete Item
                 </button>
             </div>
