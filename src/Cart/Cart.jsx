@@ -26,6 +26,7 @@ const Cart = () => {
                 quantity={item.quantity}
                 />
             ))}
+{ cartItems.length > 0 ?
             <div className="flex justify-center mt-5">
                 <div>
                     <p className="mb-2 text-lg">
@@ -36,6 +37,7 @@ const Cart = () => {
                     px-20 py-4 hover:bg-white hover:text-black transition duration-300">Checkout</button>
                 </div>
             </div>
+: <div className="flex place-content-center">Your cart is Empty</div> }
         </div>
      );
 }
