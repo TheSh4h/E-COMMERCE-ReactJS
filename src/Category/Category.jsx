@@ -1,5 +1,5 @@
 import books from '../img/books.jpg';
-import furniture from '../img/furniture.jpg';
+import outfit from '../img/G outfits.jpg';
 import gym from '../img/gym.jpg';
 import console from '../img/console.jpg';
 import { Link } from 'react-router-dom';
@@ -9,7 +9,7 @@ const Category = () => {
     const categories = [
         { img: gym, title: 'Gym'},
         { img: books, title: 'Books'},
-        { img: furniture, title: 'Furniture'},
+        { img: outfit, title: 'Men\'s Outfit'},
         { img: console, title: 'Electronics'},
     ]
     return ( 
