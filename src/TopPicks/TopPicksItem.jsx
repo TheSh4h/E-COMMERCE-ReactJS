@@ -8,7 +8,7 @@ const TopPicksItem = ( { image, title, description, price, tag } ) => {
                     <p className="text-gray-800 text-xl font-semibold mb-2">{title}</p>
                     <p className="text-gray-600 text-base">{description}</p>
                     <div className="mt-4">
-                        <span className="text-gray-800 text-lg font-semibold">{price}</span>
+                        <span className="text-gray-800 text-lg font-semibold">${price}</span>
                         <span className="text-gray-600 text-sm ml-2">{tag}</span>
                     </div>
                 </div>
