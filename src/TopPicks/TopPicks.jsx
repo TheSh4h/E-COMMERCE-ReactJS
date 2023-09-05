@@ -3,9 +3,9 @@ import useFetch from '../useFetch';
 import { Link } from 'react-router-dom';
 
 
-const TopPicks = () => {
+const TopPicks = ({ id }) => {
 
-    const { loading, data, error } = useFetch('http://localhost:4000/products/');
+    const { loading, data, error } = useFetch('http://localhost:4000/' + id);
 
     return ( 
         <div className='m-10'>
@@ -16,10 +16,10 @@ const TopPicks = () => {
                 {error && <p>Failed to load resources</p>}
 
                 {data.map((product, index) => (
-                    <Link to={`/${product.id}`} key={index}>
+                    <Link to={`/img/outfits/${product.id}`} key={index}>
                         <TopPicksItem
                             key={index}
-                            image={`./img/${product.image}`}
+                            image={`../img/${product.image}`}
                             title={product.title}
                             description={product.description}
                             price={product.price} 

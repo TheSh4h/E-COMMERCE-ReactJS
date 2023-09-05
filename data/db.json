@@ -1,20 +1,12 @@
 {
-  "GalleryItems": [
+  "outfits": [
     {
-        "img": "gym.jpg",
-        "title": "Gym"
-    },
-    {
-        "img": "books.jpg",
-        "title": "Books"
-    },
-    {
-        "img": "furniture.jpg",
-        "title": "Furniture"
-    },
-    {
-        "img": "console.jpg",
-        "title": "Electronics"
+      "id": 0,
+      "image": "ghost.jpg",
+      "title": "Ghost outfit",
+      "description": "Description goes here",
+      "price": "500",
+      "tag": "USD"
     }
 ],
  "products": [
