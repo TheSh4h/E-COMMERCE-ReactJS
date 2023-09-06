@@ -4,7 +4,7 @@ import RootLayout from './layout/RootLayout';
 import Home from './pages/Home';
 import Gym from './pages/Category Pages/Gym';
 import Books from './pages/Category Pages/Books';
-import Furniture from './pages/Category Pages/Furniture';
+import Outfit from './pages/Category Pages/Outfit';
 import Electronics from './pages/Category Pages/Electronics';
 import ItemList from './pages/ItemList';
 import CartContextProvider from './context/cart-display-context';
@@ -17,7 +17,7 @@ const router = createBrowserRouter(
       <Route path='account' element={<Account />} />
       <Route path='Gym' element={<Gym />} />
       <Route path='Books' element={<Books />} />
-      <Route path='Furniture' element={<Furniture />} />
+      <Route path="Men's Outfit" element={<Outfit />} />
       <Route path='Electronics' element={<Electronics />} />
       <Route path=':id' element={<ItemList />} />
     </Route>
