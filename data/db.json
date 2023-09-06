@@ -7,6 +7,14 @@
       "description": "Description goes here",
       "price": "500",
       "tag": "USD"
+    },
+    {
+      "id": 1,
+      "image": "G outfit.jpg",
+      "title": "G outfit",
+      "description": "Description goes here",
+      "price": "999",
+      "tag": "USD"
     }
 ],
  "products": [
