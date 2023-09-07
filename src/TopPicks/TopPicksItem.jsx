@@ -2,7 +2,7 @@ const TopPicksItem = ( { image, title, description, price, tag } ) => {
     return ( 
         <div className="itemCard">
                 <div className="h-64 w-96 overflow-hidden">
-                    <img className="object-cover w-full h-full" src={image} />
+                    <img className="object-cover w-full h-full" src={image} alt={title} />
                 </div>
                 <div className="p-4">
                     <p className="text-gray-800 text-xl font-semibold mb-2">{title}</p>
