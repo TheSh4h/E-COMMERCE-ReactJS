@@ -5,7 +5,7 @@ const Home = () => {
     return ( 
         <>
         <Category />
-        <TopPicks id="outfits" />
+        <TopPicks id="products" />
         </>
      );
 }

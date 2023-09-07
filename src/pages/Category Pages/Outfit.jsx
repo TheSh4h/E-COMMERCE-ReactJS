@@ -4,7 +4,7 @@ import useFetch from "../../useFetch";
 const Outfit = () => {
     const { loading, data, error }  = useFetch('http://localhost:4000/outfits')
     return ( 
-        <div>
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8 m-5">
             {loading && <p>Loading...</p>}
             {error && <p>Failed to load resources</p>}
 

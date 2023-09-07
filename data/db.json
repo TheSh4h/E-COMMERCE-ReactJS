@@ -15,6 +15,30 @@
       "description": "Description goes here",
       "price": "999",
       "tag": "USD"
+    },
+    {
+      "id": 2,
+      "image": "ninja.jpg",
+      "title": "Ninja Outfit",
+      "description": "Description goes here",
+      "price": "2699",
+      "tag": "USD"
+    },
+    {
+      "id": 3,
+      "image": "human.jpg",
+      "title": "Normie Human outfit",
+      "description": "Description goes here",
+      "price": "399",
+      "tag": "USD"
+    },
+    {
+      "id": 4,
+      "image": "PA.jpg",
+      "title": "Post-Apcalyptic outfit",
+      "description": "Description goes here",
+      "price": "1299",
+      "tag": "USD"
     }
 ],
  "products": [
