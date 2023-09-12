@@ -9,7 +9,6 @@ import Electronics from './pages/Category Pages/Electronics';
 import ItemList from './pages/ItemList';
 import CartContextProvider from './context/cart-display-context';
 import Account from './pages/Account';
-import Page from './Page';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
