@@ -3,11 +3,11 @@ import useFetch from "../useFetch";
 import { useContext, useState } from "react";
 import { CartContext } from "../context/cart-display-context";
 
-const ItemList = () => {
+const ItemList = ({ type }) => {
     const { dispatch } = useContext(CartContext)
     
     const { id } = useParams(); //renders with the path name
-    const url = 'http://localhost:4000/products/' + id;
+    const url = 'http://localhost:4000/' + type + '/' + id;
     const {loading, data, error} = useFetch(url);
     //console.log(data)
 

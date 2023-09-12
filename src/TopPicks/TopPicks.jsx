@@ -16,7 +16,7 @@ const TopPicks = ({ id }) => {
                 {error && <p>Failed to load resources</p>}
 
                 {data.map((product, index) => (
-                    <Link to={`/${product.id}`} key={index}>
+                    <Link to={`${product.id}`} key={index}>
                         <TopPicksItem
                             key={index}
                             image={`../img/${product.image}`}

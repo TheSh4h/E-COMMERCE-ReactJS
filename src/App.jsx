@@ -9,6 +9,7 @@ import Electronics from './pages/Category Pages/Electronics';
 import ItemList from './pages/ItemList';
 import CartContextProvider from './context/cart-display-context';
 import Account from './pages/Account';
+import Page from './Page';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -18,8 +19,9 @@ const router = createBrowserRouter(
       <Route path='Gym' element={<Gym />} />
       <Route path='Books' element={<Books />} />
       <Route path="Men's Outfit" element={<Outfit />} />
+        <Route path="Men's Outfit/:id" element={<ItemList type="outfits" />} />
       <Route path='Electronics' element={<Electronics />} />
-      <Route path=':id' element={<ItemList />} />
+      <Route path=':id' element={<ItemList type="products" />} />
     </Route>
   )
 )
