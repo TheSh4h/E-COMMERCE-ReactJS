@@ -2,14 +2,6 @@
   "outfits": [
     {
       "id": 0,
-      "image": "ghost.jpg",
-      "title": "Ghost outfit",
-      "description": "Description goes here",
-      "price": "500",
-      "tag": "USD"
-    },
-    {
-      "id": 1,
       "image": "G outfit.jpg",
       "title": "G outfit",
       "description": "Description goes here",
@@ -17,27 +9,147 @@
       "tag": "USD"
     },
     {
-      "id": 2,
-      "image": "ninja.jpg",
-      "title": "Ninja Outfit",
-      "description": "Description goes here",
-      "price": "2699",
-      "tag": "USD"
-    },
-    {
-      "id": 3,
-      "image": "human.jpg",
-      "title": "Normie Human outfit",
-      "description": "Description goes here",
-      "price": "399",
-      "tag": "USD"
-    },
-    {
-      "id": 4,
+      "id": 1,
       "image": "PA.jpg",
       "title": "Post-Apcalyptic outfit",
       "description": "Description goes here",
       "price": "1299",
+      "tag": "USD"
+    },
+    {
+      "id": 2,
+      "image": "outfit 1.jpg",
+      "title": "outfit 1",
+      "description": "Description goes here",
+      "price": "799",
+      "tag": "USD"
+    },
+    {
+      "id": 3,
+      "image": "outfit 6.jpg",
+      "title": "outfit 1",
+      "description": "Description goes here",
+      "price": "799",
+      "tag": "USD"
+    },
+    {
+      "id": 4,
+      "image": "outfit 3.jpg",
+      "title": "outifit 1",
+      "description": "Description goes here",
+      "price": "799",
+      "tag": "USD"
+    },
+    {
+      "id": 5,
+      "image": "outfit 4.jpg",
+      "title": "outifit 1",
+      "description": "Description goes here",
+      "price": "799",
+      "tag": "USD"
+    },
+    {
+      "id": 6,
+      "image": "outfit 5.jpg",
+      "title": "outifit 1",
+      "description": "Description goes here",
+      "price": "799",
+      "tag": "USD"
+    },
+    {
+      "id": 7,
+      "image": "outfit 7.jpg",
+      "title": "outifit 1",
+      "description": "Description goes here",
+      "price": "799",
+      "tag": "USD"
+    },
+    {
+      "id": 8,
+      "image": "outfit 8.jpg",
+      "title": "outifit 8",
+      "description": "Description goes here",
+      "price": "799",
+      "tag": "USD"
+    },
+    {
+      "id": 9,
+      "image": "outfit 9.jpg",
+      "title": "outifit 9",
+      "description": "Description goes here",
+      "price": "799",
+      "tag": "USD"
+    },
+    {
+      "id": 10,
+      "image": "outfit 11.jpg",
+      "title": "outfit 11",
+      "description": "Description goes here",
+      "price": "799",
+      "tag": "USD"
+    },
+    {
+      "id": 11,
+      "image": "outfit 12.jpg",
+      "title": "outifit 12",
+      "description": "Description goes here",
+      "price": "799",
+      "tag": "USD"
+    },
+    {
+      "id": 12,
+      "image": "ninja.jpg",
+      "title": "Ninja Outfit",
+      "description": "Description goes here",
+      "price": "799",
+      "tag": "USD"
+    },
+    {
+      "id": 13,
+      "image": "outfit 14.jpg",
+      "title": "outfit 14",
+      "description": "Description goes here",
+      "price": "799",
+      "tag": "USD"
+    },
+    {
+      "id": 14,
+      "image": "outfit 15.jpg",
+      "title": "outfit 15",
+      "description": "Description goes here",
+      "price": "799",
+      "tag": "USD"
+    },
+    {
+      "id": 15,
+      "image": "outfit 16.jpg",
+      "title": "outfit 16",
+      "description": "Description goes here",
+      "price": "799",
+      "tag": "USD"
+    },
+    {
+      "id": 16,
+      "image": "outfit 17.jpg",
+      "title": "outfit 17",
+      "description": "Description goes here",
+      "price": "799",
+      "tag": "USD"
+    },
+    {
+      "id": 17,
+      "image": "outfit 18.jpg",
+      "title": "outfit 18",
+      "description": "Description goes here",
+      "price": "799",
+      "tag": "USD"
+    },
+    {
+      "id": 18,
+      "image": "outfit 19.jpg",
+      "title": "outfit 19",
+      "description": "Description goes here",
+      "price": "799",
       "tag": "USD"
     }
 ],
