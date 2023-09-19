@@ -1,4 +1,22 @@
 {
+  "gym": [
+    {
+      "id": 0,
+      "image": "db.jpg",
+      "title": "Hex Dumbells",
+      "description": "Description goes here",
+      "price": "49.99",
+      "tag": "USD"
+    },
+    {
+      "id": 1,
+      "image": "kb.jpg",
+      "title": "kettlebell 32kg",
+      "description": "Description goes here",
+      "price": "80.00",
+      "tag": "USD"
+    }
+  ],
   "outfits": [
     {
       "id": 0,
