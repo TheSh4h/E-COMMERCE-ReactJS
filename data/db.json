@@ -15,6 +15,62 @@
       "description": "Description goes here",
       "price": "80.00",
       "tag": "USD"
+    },
+    {
+      "id": 2,
+      "image": "barbell.jpg",
+      "title": "barbell 32kg",
+      "description": "Description goes here",
+      "price": "80.00",
+      "tag": "USD"
+    },
+    {
+      "id": 3,
+      "image": "dumbell.jpg",
+      "title": "Red Dumbell 32kg",
+      "description": "Description goes here",
+      "price": "80.00",
+      "tag": "USD"
+    },
+    {
+      "id": 4,
+      "image": "skull.jpg",
+      "title": "Skull kettlebell 32kg",
+      "description": "Description goes here",
+      "price": "169.99",
+      "tag": "USD"
+    },
+    {
+      "id": 5,
+      "image": "bag.jpg",
+      "title": "Punching Bag",
+      "description": "Description goes here",
+      "price": "399.00",
+      "tag": "USD"
+    },
+    {
+      "id": 6,
+      "image": "rack.jpg",
+      "title": "Squat Rack",
+      "description": "Description goes here",
+      "price": "799.00",
+      "tag": "USD"
+    },
+    {
+      "id": 7,
+      "image": "gloves.jpg",
+      "title": "Boxing Gloves",
+      "description": "Description goes here",
+      "price": "199.00",
+      "tag": "USD"
+    },
+    {
+      "id": 8,
+      "image": "shaker.jpg",
+      "title": "Shaker Bottle",
+      "description": "Description goes here",
+      "price": "59.99",
+      "tag": "USD"
     }
   ],
   "outfits": [
