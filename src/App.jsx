@@ -18,9 +18,11 @@ const router = createBrowserRouter(
       <Route path='Gym' element={<Gym />} />
       <Route path='Books' element={<Books />} />
       <Route path="Men's Outfit" element={<Outfit />} />
-      <Route path="Men's Outfit/:id" element={<ItemList type="outfits" />} />
-      <Route path="Gym/:id" element={<ItemList type="gym" />} />
       <Route path='Electronics' element={<Electronics />} />
+      <Route path="Men's Outfit/:id" element={<ItemList type="outfits" />} />
+      <Route path="Books/:id" element={<ItemList type="books" />} />
+      <Route path="Gym/:id" element={<ItemList type="gym" />} />
+      <Route path="Electronics/:id" element={<ItemList type="electronics" />} />
       <Route path=':id' element={<ItemList type="products" />} />
     </Route>
   )

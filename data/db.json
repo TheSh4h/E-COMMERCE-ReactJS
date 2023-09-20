@@ -1,4 +1,112 @@
 {
+  "electronics": [
+    {
+      "id": 0,
+      "image": "hp2.jpg",
+      "title": "Headphone",
+      "description": "Description goes here",
+      "price": "150.99",
+      "tag": "USD"
+    },
+    {
+      "id": 1,
+      "image": "hp.jpg",
+      "title": "Audionic Headphone",
+      "description": "Description goes here",
+      "price": "250.99",
+      "tag": "USD"
+    },
+    {
+      "id": 3,
+      "image": "macbook.jpg",
+      "title": "Apple Macbook Air M1",
+      "description": "Description goes here",
+      "price": "1500",
+      "tag": "USD"
+    },
+    {
+      "id": 4,
+      "image": "iphone.jpg",
+      "title": "Apple Macbook Air M1",
+      "description": "Description goes here",
+      "price": "999.99",
+      "tag": "USD"
+    }
+  ],
+  "books": [
+    {
+      "id": 0,
+      "image": "investor.jpg",
+      "title": "The Intelligent Investor",
+      "description": "Description goes here",
+      "price": "49.99",
+      "tag": "USD"
+    },
+    {
+      "id": 1,
+      "image": "power.jpg",
+      "title": "48 Rules of Power",
+      "description": "Description goes here",
+      "price": "49.99",
+      "tag": "USD"
+    },
+    {
+      "id": 2,
+      "image": "enemy.jpg",
+      "title": "Ego is the Enemy",
+      "description": "Description goes here",
+      "price": "49.99",
+      "tag": "USD"
+    },
+    {
+      "id": 3,
+      "image": "habits.jpg",
+      "title": "Atomic Habits",
+      "description": "Description goes here",
+      "price": "49.99",
+      "tag": "USD"
+    },
+    {
+      "id": 4,
+      "image": "idiots.jpg",
+      "title": "Surronded by Idiots",
+      "description": "Description goes here",
+      "price": "49.99",
+      "tag": "USD"
+    },
+    {
+      "id": 5,
+      "image": "money.jpg",
+      "title": "Psycology of Money",
+      "description": "Description goes here",
+      "price": "49.99",
+      "tag": "USD"
+    },
+    {
+      "id": 6,
+      "image": "nature.jpg",
+      "title": "Laws of Human Nature",
+      "description": "Description goes here",
+      "price": "49.99",
+      "tag": "USD"
+    },
+    {
+      "id": 7,
+      "image": "zero.jpg",
+      "title": "Zero to One",
+      "description": "Description goes here",
+      "price": "49.99",
+      "tag": "USD"
+    },
+    {
+      "id": 8,
+      "image": "aot.jpg",
+      "title": "Attack on Titan Manga",
+      "description": "Attack on Titan Manga",
+      "price": "15.99",
+      "tag": "USD"
+    }
+  ],
   "gym": [
     {
       "id": 0,
@@ -70,6 +178,14 @@
       "title": "Shaker Bottle",
       "description": "Description goes here",
       "price": "59.99",
+      "tag": "USD"
+    },
+    {
+      "id":9,
+      "image": "treadmill.jpg",
+      "title": "Treadmill",
+      "description": "Description goes here",
+      "price": "2999.99",
       "tag": "USD"
     }
   ],
