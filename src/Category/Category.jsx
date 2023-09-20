@@ -9,7 +9,7 @@ const Category = () => {
     const categories = [
         { img: gym, title: 'Gym'},
         { img: books, title: 'Books'},
-        { img: outfit, title: 'Men\'s Outfit'},
+        { img: outfit, title: "Men's Outfit"},
         { img: console, title: 'Electronics'},
     ]
     return ( 
