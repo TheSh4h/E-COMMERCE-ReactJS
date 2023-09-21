@@ -34,7 +34,7 @@ const Books = () => {
                 
             <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8 m-5">
                 {items.map((product, index) => (
-                    <Link to={`/Books/${product.id}`} key={index}>
+                    <Link to={`/books/${product.id}`} key={index}>
                         <TopPicksItem
                             key={index}
                             image={`../img/${product.image}`}

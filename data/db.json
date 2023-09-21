@@ -6,7 +6,8 @@
       "title": "Headphone",
       "description": "Description goes here",
       "price": "150.99",
-      "tag": "USD"
+      "tag": "USD",
+      "type": "electronics"
     },
     {
       "id": 1,
@@ -14,7 +15,8 @@
       "title": "Audionic Headphone",
       "description": "Description goes here",
       "price": "250.99",
-      "tag": "USD"
+      "tag": "USD",
+      "type": "electronics"
     },
     {
       "id": 3,
@@ -22,7 +24,8 @@
       "title": "Apple Macbook Air M1",
       "description": "Description goes here",
       "price": "1500",
-      "tag": "USD"
+      "tag": "USD",
+      "type": "electronics"
     },
     {
       "id": 4,
@@ -30,7 +33,8 @@
       "title": "Apple Macbook Air M1",
       "description": "Description goes here",
       "price": "999.99",
-      "tag": "USD"
+      "tag": "USD",
+      "type": "electronics"
     }
   ],
   "books": [
@@ -40,7 +44,8 @@
       "title": "The Intelligent Investor",
       "description": "Description goes here",
       "price": "49.99",
-      "tag": "USD"
+      "tag": "USD",
+      "type": "books"
     },
     {
       "id": 1,
@@ -48,7 +53,8 @@
       "title": "48 Rules of Power",
       "description": "Description goes here",
       "price": "49.99",
-      "tag": "USD"
+      "tag": "USD",
+      "type": "books"
     },
     {
       "id": 2,
@@ -56,7 +62,8 @@
       "title": "Ego is the Enemy",
       "description": "Description goes here",
       "price": "49.99",
-      "tag": "USD"
+      "tag": "USD",
+      "type": "books"
     },
     {
       "id": 3,
@@ -64,7 +71,8 @@
       "title": "Atomic Habits",
       "description": "Description goes here",
       "price": "49.99",
-      "tag": "USD"
+      "tag": "USD",
+      "type": "books"
     },
     {
       "id": 4,
@@ -72,7 +80,8 @@
       "title": "Surronded by Idiots",
       "description": "Description goes here",
       "price": "49.99",
-      "tag": "USD"
+      "tag": "USD",
+      "type": "books"
     },
     {
       "id": 5,
@@ -80,7 +89,8 @@
       "title": "Psycology of Money",
       "description": "Description goes here",
       "price": "49.99",
-      "tag": "USD"
+      "tag": "USD",
+      "type": "books"
     },
     {
       "id": 6,
@@ -88,7 +98,8 @@
       "title": "Laws of Human Nature",
       "description": "Description goes here",
       "price": "49.99",
-      "tag": "USD"
+      "tag": "USD",
+      "type": "books"
     },
     {
       "id": 7,
@@ -96,7 +107,8 @@
       "title": "Zero to One",
       "description": "Description goes here",
       "price": "49.99",
-      "tag": "USD"
+      "tag": "USD",
+      "type": "books"
     },
     {
       "id": 8,
@@ -104,7 +116,8 @@
       "title": "Attack on Titan Manga",
       "description": "Attack on Titan Manga",
       "price": "15.99",
-      "tag": "USD"
+      "tag": "USD",
+      "type": "books"
     }
   ],
   "gym": [
@@ -114,7 +127,8 @@
       "title": "Hex Dumbells",
       "description": "Description goes here",
       "price": "49.99",
-      "tag": "USD"
+      "tag": "USD",
+      "type": "gym"
     },
     {
       "id": 1,
@@ -122,7 +136,8 @@
       "title": "kettlebell 32kg",
       "description": "Description goes here",
       "price": "80.00",
-      "tag": "USD"
+      "tag": "USD",
+      "type": "gym"
     },
     {
       "id": 2,
@@ -130,7 +145,8 @@
       "title": "barbell 32kg",
       "description": "Description goes here",
       "price": "80.00",
-      "tag": "USD"
+      "tag": "USD",
+      "type": "gym"
     },
     {
       "id": 3,
@@ -138,7 +154,8 @@
       "title": "Red Dumbell 32kg",
       "description": "Description goes here",
       "price": "80.00",
-      "tag": "USD"
+      "tag": "USD",
+      "type": "gym"
     },
     {
       "id": 4,
@@ -146,7 +163,8 @@
       "title": "Skull kettlebell 32kg",
       "description": "Description goes here",
       "price": "169.99",
-      "tag": "USD"
+      "tag": "USD",
+      "type": "gym"
     },
     {
       "id": 5,
@@ -154,7 +172,8 @@
       "title": "Punching Bag",
       "description": "Description goes here",
       "price": "399.00",
-      "tag": "USD"
+      "tag": "USD",
+      "type": "gym"
     },
     {
       "id": 6,
@@ -162,7 +181,8 @@
       "title": "Squat Rack",
       "description": "Description goes here",
       "price": "799.00",
-      "tag": "USD"
+      "tag": "USD",
+      "type": "gym"
     },
     {
       "id": 7,
@@ -170,7 +190,8 @@
       "title": "Boxing Gloves",
       "description": "Description goes here",
       "price": "199.00",
-      "tag": "USD"
+      "tag": "USD",
+      "type": "gym"
     },
     {
       "id": 8,
@@ -178,7 +199,8 @@
       "title": "Shaker Bottle",
       "description": "Description goes here",
       "price": "59.99",
-      "tag": "USD"
+      "tag": "USD",
+      "type": "gym"
     },
     {
       "id":9,
@@ -186,7 +208,8 @@
       "title": "Treadmill",
       "description": "Description goes here",
       "price": "2999.99",
-      "tag": "USD"
+      "tag": "USD",
+      "type": "gym"
     }
   ],
   "outfits": [
@@ -196,7 +219,8 @@
       "title": "G outfit",
       "description": "Description goes here",
       "price": "999",
-      "tag": "USD"
+      "tag": "USD",
+      "type": "outfits"
     },
     {
       "id": 1,
@@ -204,7 +228,8 @@
       "title": "Post-Apcalyptic outfit",
       "description": "Description goes here",
       "price": "1299",
-      "tag": "USD"
+      "tag": "USD",
+      "type": "outfits"
     },
     {
       "id": 2,
@@ -212,7 +237,8 @@
       "title": "outfit 1",
       "description": "Description goes here",
       "price": "799",
-      "tag": "USD"
+      "tag": "USD",
+      "type": "outfits"
     },
     {
       "id": 3,
@@ -220,7 +246,8 @@
       "title": "outfit 1",
       "description": "Description goes here",
       "price": "799",
-      "tag": "USD"
+      "tag": "USD",
+      "type": "outfits"
     },
     {
       "id": 4,
@@ -228,7 +255,8 @@
       "title": "outifit 1",
       "description": "Description goes here",
       "price": "799",
-      "tag": "USD"
+      "tag": "USD",
+      "type": "outfits"
     },
     {
       "id": 5,
@@ -236,7 +264,8 @@
       "title": "outifit 1",
       "description": "Description goes here",
       "price": "799",
-      "tag": "USD"
+      "tag": "USD",
+      "type": "outfits"
     },
     {
       "id": 6,
@@ -244,7 +273,8 @@
       "title": "outifit 1",
       "description": "Description goes here",
       "price": "799",
-      "tag": "USD"
+      "tag": "USD",
+      "type": "outfits"
     },
     {
       "id": 7,
@@ -252,7 +282,8 @@
       "title": "outifit 1",
       "description": "Description goes here",
       "price": "799",
-      "tag": "USD"
+      "tag": "USD",
+      "type": "outfits"
     },
     {
       "id": 8,
@@ -260,7 +291,8 @@
       "title": "outifit 8",
       "description": "Description goes here",
       "price": "799",
-      "tag": "USD"
+      "tag": "USD",
+      "type": "outfits"
     },
     {
       "id": 9,
@@ -268,7 +300,8 @@
       "title": "outifit 9",
       "description": "Description goes here",
       "price": "799",
-      "tag": "USD"
+      "tag": "USD",
+      "type": "outfits"
     },
     {
       "id": 10,
@@ -276,7 +309,8 @@
       "title": "outfit 11",
       "description": "Description goes here",
       "price": "799",
-      "tag": "USD"
+      "tag": "USD",
+      "type": "outfits"
     },
     {
       "id": 11,
@@ -284,7 +318,8 @@
       "title": "outifit 12",
       "description": "Description goes here",
       "price": "799",
-      "tag": "USD"
+      "tag": "USD",
+      "type": "outfits"
     },
     {
       "id": 12,
@@ -292,7 +327,8 @@
       "title": "Ninja Outfit",
       "description": "Description goes here",
       "price": "799",
-      "tag": "USD"
+      "tag": "USD",
+      "type": "outfits"
     },
     {
       "id": 13,
@@ -300,7 +336,8 @@
       "title": "outfit 14",
       "description": "Description goes here",
       "price": "799",
-      "tag": "USD"
+      "tag": "USD",
+      "type": "outfits"
     },
     {
       "id": 14,
@@ -308,7 +345,8 @@
       "title": "outfit 15",
       "description": "Description goes here",
       "price": "799",
-      "tag": "USD"
+      "tag": "USD",
+      "type": "outfits"
     },
     {
       "id": 15,
@@ -316,7 +354,8 @@
       "title": "outfit 16",
       "description": "Description goes here",
       "price": "799",
-      "tag": "USD"
+      "tag": "USD",
+      "type": "outfits"
     },
     {
       "id": 16,
@@ -324,7 +363,8 @@
       "title": "outfit 17",
       "description": "Description goes here",
       "price": "799",
-      "tag": "USD"
+      "tag": "USD",
+      "type": "outfits"
     },
     {
       "id": 17,
@@ -332,7 +372,8 @@
       "title": "outfit 18",
       "description": "Description goes here",
       "price": "799",
-      "tag": "USD"
+      "tag": "USD",
+      "type": "outfits"
     },
     {
       "id": 18,
@@ -340,7 +381,8 @@
       "title": "outfit 19",
       "description": "Description goes here",
       "price": "799",
-      "tag": "USD"
+      "tag": "USD",
+      "type": "outfits"
     }
 ],
  "products": [

@@ -1,10 +1,14 @@
+import { useContext } from "react";
 import { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { searchContext } from "../context/search-context";
 
 const SearchBar = () => {
     const navigate = useNavigate();
     const [input, setInput] = useState("");
     const [results, setResults] = useState([]);
+
+    const { setValue } = useContext(searchContext)
 
     const urls = [
         'http://localhost:4000/gym',
@@ -28,17 +32,21 @@ const SearchBar = () => {
         e.preventDefault()
         setInput(e.target.value);
     }
-
-    if(input.length > 0) {
-        results.filter((i) => {
-            return i.title.toLowerCase().match(input.toLowerCase());
-        })
-    }
     
     const handleSubmit = (e) => {
         e.preventDefault();
         navigate("/search")
     }
+
+    useEffect(() => {
+        if(input.length > 0) {
+            const filteredResult = results.filter((item) =>
+            item.title.toLowerCase().includes(input.toLowerCase())
+        );
+        setValue(filteredResult);
+        }
+    }, [input, results]);
+
     return ( 
         <form onSubmit={handleSubmit}>
             <div className="flex items-center relative w-96 text-black">
