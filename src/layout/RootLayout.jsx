@@ -5,6 +5,7 @@ import Cart from '../Cart/Cart';
 import { useContext } from 'react';
 import { CartContext } from '../context/cart-display-context';
 import ScrollToTop from '../ScrollToTop';
+import Breadcrumbs from '../Breadcrumbs';
 
 const RootLayout = () => {
     const { showCart, setShowCart } = useContext(CartContext);
@@ -20,6 +21,7 @@ const RootLayout = () => {
                     </header>
                     <div onClick={() => setShowCart(false)}>
                         <main className="mt-20">
+                        <Breadcrumbs />
                             <Outlet />
                         </main>
 
