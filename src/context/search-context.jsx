@@ -4,10 +4,13 @@ export const searchContext = createContext(null);
 
 const SearchContextProvider = (props) => {
     const [value, setValue] = useState([]);
+    const [loading, setLoading] = useState(true);
 
     const contextValue = {
         value,
-        setValue
+        setValue,
+        loading,
+        setLoading
     };
 
     return ( 

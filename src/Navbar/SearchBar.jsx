@@ -8,7 +8,7 @@ const SearchBar = () => {
     const [input, setInput] = useState("");
     const [results, setResults] = useState([]);
 
-    const { setValue } = useContext(searchContext)
+    const { setValue, setLoading } = useContext(searchContext)
 
     const urls = [
         'http://localhost:4000/gym',
@@ -18,14 +18,25 @@ const SearchBar = () => {
     ]
 
     useEffect(() => {
-        urls.map((url) => {
-            fetch(url)
-            .then((response) => response.json())
-            .then((data) => {
-                setResults(data)
-            })
-            .catch(error => console.log('There was a problem!', error))
-        })
+        const fetchData = async () => {
+            try {
+                const promises = urls.map(async (url) => {
+                    const res = await fetch(url);
+                    if (!res.ok) {
+                        throw new Error('Network Response Error');
+                    }
+                    const data = await res.json();
+                    return data;
+                });
+                const allData = await Promise.all(promises);
+                setResults(allData.flat()); // Flatten the array of arrays
+                setLoading(false);
+            } catch (error) {
+                console.error('There was a problem!', error);
+            }
+        };
+    
+        fetchData();
     }, []);
 
     const handleChange = (e) => {
@@ -41,7 +52,7 @@ const SearchBar = () => {
     useEffect(() => {
         if(input.length > 0) {
             const filteredResult = results.filter((item) =>
-            item.title.toLowerCase().includes(input.toLowerCase())
+            item.title.toLowerCase().match(input.toLowerCase())
         );
         setValue(filteredResult);
         }

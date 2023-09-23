@@ -220,7 +220,7 @@
       "description": "Description goes here",
       "price": "999",
       "tag": "USD",
-      "type": "outfits"
+      "type": "Men's Outfit"
     },
     {
       "id": 1,
@@ -229,7 +229,7 @@
       "description": "Description goes here",
       "price": "1299",
       "tag": "USD",
-      "type": "outfits"
+      "type": "Men's Outfit"
     },
     {
       "id": 2,
@@ -238,7 +238,7 @@
       "description": "Description goes here",
       "price": "799",
       "tag": "USD",
-      "type": "outfits"
+      "type": "Men's Outfit"
     },
     {
       "id": 3,
@@ -247,7 +247,7 @@
       "description": "Description goes here",
       "price": "799",
       "tag": "USD",
-      "type": "outfits"
+      "type": "Men's Outfit"
     },
     {
       "id": 4,
@@ -256,7 +256,7 @@
       "description": "Description goes here",
       "price": "799",
       "tag": "USD",
-      "type": "outfits"
+      "type": "Men's Outfit"
     },
     {
       "id": 5,
@@ -265,7 +265,7 @@
       "description": "Description goes here",
       "price": "799",
       "tag": "USD",
-      "type": "outfits"
+      "type": "Men's Outfit"
     },
     {
       "id": 6,
@@ -274,7 +274,7 @@
       "description": "Description goes here",
       "price": "799",
       "tag": "USD",
-      "type": "outfits"
+      "type": "Men's Outfit"
     },
     {
       "id": 7,
@@ -283,7 +283,7 @@
       "description": "Description goes here",
       "price": "799",
       "tag": "USD",
-      "type": "outfits"
+      "type": "Men's Outfit"
     },
     {
       "id": 8,
@@ -292,7 +292,7 @@
       "description": "Description goes here",
       "price": "799",
       "tag": "USD",
-      "type": "outfits"
+      "type": "Men's Outfit"
     },
     {
       "id": 9,
@@ -301,7 +301,7 @@
       "description": "Description goes here",
       "price": "799",
       "tag": "USD",
-      "type": "outfits"
+      "type": "Men's Outfit"
     },
     {
       "id": 10,
@@ -310,7 +310,7 @@
       "description": "Description goes here",
       "price": "799",
       "tag": "USD",
-      "type": "outfits"
+      "type": "Men's Outfit"
     },
     {
       "id": 11,
@@ -319,7 +319,7 @@
       "description": "Description goes here",
       "price": "799",
       "tag": "USD",
-      "type": "outfits"
+      "type": "Men's Outfit"
     },
     {
       "id": 12,
@@ -328,7 +328,7 @@
       "description": "Description goes here",
       "price": "799",
       "tag": "USD",
-      "type": "outfits"
+      "type": "Men's Outfit"
     },
     {
       "id": 13,
@@ -337,7 +337,7 @@
       "description": "Description goes here",
       "price": "799",
       "tag": "USD",
-      "type": "outfits"
+      "type": "Men's Outfit"
     },
     {
       "id": 14,
@@ -346,7 +346,7 @@
       "description": "Description goes here",
       "price": "799",
       "tag": "USD",
-      "type": "outfits"
+      "type": "Men's Outfit"
     },
     {
       "id": 15,
@@ -355,7 +355,7 @@
       "description": "Description goes here",
       "price": "799",
       "tag": "USD",
-      "type": "outfits"
+      "type": "Men's Outfit"
     },
     {
       "id": 16,
@@ -364,7 +364,7 @@
       "description": "Description goes here",
       "price": "799",
       "tag": "USD",
-      "type": "outfits"
+      "type": "Men's Outfit"
     },
     {
       "id": 17,
@@ -373,7 +373,7 @@
       "description": "Description goes here",
       "price": "799",
       "tag": "USD",
-      "type": "outfits"
+      "type": "Men's Outfit"
     },
     {
       "id": 18,
@@ -382,7 +382,7 @@
       "description": "Description goes here",
       "price": "799",
       "tag": "USD",
-      "type": "outfits"
+      "type": "Men's Outfit"
     }
 ],
  "products": [
@@ -449,7 +449,7 @@
       "description": "Description goes here",
       "price": "799",
       "tag": "USD",
-      "type": "outfits"
+      "type": "Men's Outfit"
     },
     {
       "id": 8,
@@ -458,7 +458,7 @@
       "description": "Description goes here",
       "price": "799",
       "tag": "USD",
-      "type": "outfits"
+      "type": "Men's Outfit"
     }
 ]
 } 
