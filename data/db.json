@@ -35,6 +35,15 @@
       "price": "999.99",
       "tag": "USD",
       "type": "electronics"
+    },
+    {
+      "id": 5,
+      "image": "ps5.jpg",
+      "title": "PlayStation 5",
+      "description": "Description goes here",
+      "price": "500",
+      "tag": "USD",
+      "type": "electronics"
     }
   ],
   "books": [
@@ -45,7 +54,7 @@
       "description": "Description goes here",
       "price": "49.99",
       "tag": "USD",
-      "type": "books"
+      "type": "Books"
     },
     {
       "id": 1,
@@ -54,7 +63,7 @@
       "description": "Description goes here",
       "price": "49.99",
       "tag": "USD",
-      "type": "books"
+      "type": "Books"
     },
     {
       "id": 2,
@@ -63,7 +72,7 @@
       "description": "Description goes here",
       "price": "49.99",
       "tag": "USD",
-      "type": "books"
+      "type": "Books"
     },
     {
       "id": 3,
@@ -72,7 +81,7 @@
       "description": "Description goes here",
       "price": "49.99",
       "tag": "USD",
-      "type": "books"
+      "type": "Books"
     },
     {
       "id": 4,
@@ -81,7 +90,7 @@
       "description": "Description goes here",
       "price": "49.99",
       "tag": "USD",
-      "type": "books"
+      "type": "Books"
     },
     {
       "id": 5,
@@ -90,7 +99,7 @@
       "description": "Description goes here",
       "price": "49.99",
       "tag": "USD",
-      "type": "books"
+      "type": "Books"
     },
     {
       "id": 6,
@@ -99,7 +108,7 @@
       "description": "Description goes here",
       "price": "49.99",
       "tag": "USD",
-      "type": "books"
+      "type": "Books"
     },
     {
       "id": 7,
@@ -108,7 +117,7 @@
       "description": "Description goes here",
       "price": "49.99",
       "tag": "USD",
-      "type": "books"
+      "type": "Books"
     },
     {
       "id": 8,
@@ -117,7 +126,7 @@
       "description": "Attack on Titan Manga",
       "price": "15.99",
       "tag": "USD",
-      "type": "books"
+      "type": "Books"
     }
   ],
   "gym": [
