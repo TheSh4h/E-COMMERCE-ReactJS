@@ -11,7 +11,7 @@ const Breadcrumbs = () => {
 
         return (
             <div className="crumb font-semibold" key={crumb}>
-                <Link to={currentLink}>{crumb}</Link>
+                <Link to={currentLink}>{decodeURIComponent(crumb)}</Link>
             </div>
         )
     })
