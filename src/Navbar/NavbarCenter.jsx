@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import SearchBar from "./SearchBar";
 
 const NavbarCenter = () => {
@@ -5,20 +6,30 @@ const NavbarCenter = () => {
     return ( 
         <div className={innerWidth >= 1024? 'flex': 'flex-col'}>
                         {innerWidth <= 1024? <SearchBar />: null}
-                        <div className="navbarStart"
-                        >    
-                            <h1>Deals</h1>
-                        </div>
-
-                        <div className="navbarStart"
+                        <NavLink to={'Deals'}
+                         style={({ isActive, isPending }) => {
+                            return {
+                              fontWeight: isActive ? "600" : ""
+                            };
+                          }}
+                        
                         >
-                            <h1>What's New</h1>
-                        </div>
+                            <div className="navbarStart">    
+                                <h1>Deals</h1>
+                            </div>
+                        </NavLink>
 
-                        <div className="navbarStart"
+                        <NavLink to={"What's New"}
+                         style={({ isActive, isPending }) => {
+                            return {
+                              fontWeight: isActive ? "600" : ""
+                            };
+                          }}
                         >
-                            <h1>Delivery</h1>
-                        </div>
+                            <div className="navbarStart">
+                                <h1>What's New</h1>
+                            </div>
+                        </NavLink>
 
                     {/* Search field */}
                     {innerWidth >= 1024? <SearchBar />: null}
