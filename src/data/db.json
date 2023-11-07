@@ -1,0 +1,475 @@
+{
+  "electronics": [
+    {
+      "id": 0,
+      "image": "hp2.jpg",
+      "title": "Headphone",
+      "description": "Description goes here",
+      "price": "150.99",
+      "tag": "USD",
+      "type": "electronics"
+    },
+    {
+      "id": 1,
+      "image": "hp.jpg",
+      "title": "Audionic Headphone",
+      "description": "Description goes here",
+      "price": "250.99",
+      "tag": "USD",
+      "type": "electronics"
+    },
+    {
+      "id": 3,
+      "image": "macbook.jpg",
+      "title": "Apple Macbook Air M1",
+      "description": "Description goes here",
+      "price": "1500",
+      "tag": "USD",
+      "type": "electronics"
+    },
+    {
+      "id": 4,
+      "image": "iphone.jpg",
+      "title": "Apple Macbook Air M1",
+      "description": "Description goes here",
+      "price": "999.99",
+      "tag": "USD",
+      "type": "electronics"
+    },
+    {
+      "id": 5,
+      "image": "ps5.jpg",
+      "title": "PlayStation 5",
+      "description": "Description goes here",
+      "price": "500",
+      "tag": "USD",
+      "type": "electronics"
+    }
+  ],
+  "books": [
+    {
+      "id": 0,
+      "image": "investor.jpg",
+      "title": "The Intelligent Investor",
+      "description": "Description goes here",
+      "price": "49.99",
+      "tag": "USD",
+      "type": "Books"
+    },
+    {
+      "id": 1,
+      "image": "power.jpg",
+      "title": "48 Rules of Power",
+      "description": "Description goes here",
+      "price": "49.99",
+      "tag": "USD",
+      "type": "Books"
+    },
+    {
+      "id": 2,
+      "image": "enemy.jpg",
+      "title": "Ego is the Enemy",
+      "description": "Description goes here",
+      "price": "49.99",
+      "tag": "USD",
+      "type": "Books"
+    },
+    {
+      "id": 3,
+      "image": "habits.jpg",
+      "title": "Atomic Habits",
+      "description": "Description goes here",
+      "price": "49.99",
+      "tag": "USD",
+      "type": "Books"
+    },
+    {
+      "id": 4,
+      "image": "idiots.jpg",
+      "title": "Surronded by Idiots",
+      "description": "Description goes here",
+      "price": "49.99",
+      "tag": "USD",
+      "type": "Books"
+    },
+    {
+      "id": 5,
+      "image": "money.jpg",
+      "title": "Psycology of Money",
+      "description": "Description goes here",
+      "price": "49.99",
+      "tag": "USD",
+      "type": "Books"
+    },
+    {
+      "id": 6,
+      "image": "nature.jpg",
+      "title": "Laws of Human Nature",
+      "description": "Description goes here",
+      "price": "49.99",
+      "tag": "USD",
+      "type": "Books"
+    },
+    {
+      "id": 7,
+      "image": "zero.jpg",
+      "title": "Zero to One",
+      "description": "Description goes here",
+      "price": "49.99",
+      "tag": "USD",
+      "type": "Books"
+    },
+    {
+      "id": 8,
+      "image": "aot.jpg",
+      "title": "Attack on Titan Manga",
+      "description": "Attack on Titan Manga",
+      "price": "15.99",
+      "tag": "USD",
+      "type": "Books"
+    }
+  ],
+  "gym": [
+    {
+      "id": 0,
+      "image": "db.jpg",
+      "title": "Hex Dumbells",
+      "description": "Description goes here",
+      "price": "49.99",
+      "tag": "USD",
+      "type": "gym"
+    },
+    {
+      "id": 1,
+      "image": "kb.jpg",
+      "title": "kettlebell 32kg",
+      "description": "Description goes here",
+      "price": "80.00",
+      "tag": "USD",
+      "type": "gym"
+    },
+    {
+      "id": 2,
+      "image": "barbell.jpg",
+      "title": "barbell 32kg",
+      "description": "Description goes here",
+      "price": "80.00",
+      "tag": "USD",
+      "type": "gym"
+    },
+    {
+      "id": 3,
+      "image": "dumbell.jpg",
+      "title": "Red Dumbell 32kg",
+      "description": "Description goes here",
+      "price": "80.00",
+      "tag": "USD",
+      "type": "gym"
+    },
+    {
+      "id": 4,
+      "image": "skull.jpg",
+      "title": "Skull kettlebell 32kg",
+      "description": "Description goes here",
+      "price": "169.99",
+      "tag": "USD",
+      "type": "gym"
+    },
+    {
+      "id": 5,
+      "image": "bag.jpg",
+      "title": "Punching Bag",
+      "description": "Description goes here",
+      "price": "399.00",
+      "tag": "USD",
+      "type": "gym"
+    },
+    {
+      "id": 6,
+      "image": "rack.jpg",
+      "title": "Squat Rack",
+      "description": "Description goes here",
+      "price": "799.00",
+      "tag": "USD",
+      "type": "gym"
+    },
+    {
+      "id": 7,
+      "image": "gloves.jpg",
+      "title": "Boxing Gloves",
+      "description": "Description goes here",
+      "price": "199.00",
+      "tag": "USD",
+      "type": "gym"
+    },
+    {
+      "id": 8,
+      "image": "shaker.jpg",
+      "title": "Shaker Bottle",
+      "description": "Description goes here",
+      "price": "59.99",
+      "tag": "USD",
+      "type": "gym"
+    },
+    {
+      "id":9,
+      "image": "treadmill.jpg",
+      "title": "Treadmill",
+      "description": "Description goes here",
+      "price": "2999.99",
+      "tag": "USD",
+      "type": "gym"
+    }
+  ],
+  "outfits": [
+    {
+      "id": 0,
+      "image": "G outfit.jpg",
+      "title": "G outfit",
+      "description": "Description goes here",
+      "price": "999",
+      "tag": "USD",
+      "type": "Men's Outfit"
+    },
+    {
+      "id": 1,
+      "image": "PA.jpg",
+      "title": "Post-Apcalyptic outfit",
+      "description": "Description goes here",
+      "price": "1299",
+      "tag": "USD",
+      "type": "Men's Outfit"
+    },
+    {
+      "id": 2,
+      "image": "outfit 1.jpg",
+      "title": "outfit 1",
+      "description": "Description goes here",
+      "price": "799",
+      "tag": "USD",
+      "type": "Men's Outfit"
+    },
+    {
+      "id": 3,
+      "image": "outfit 6.jpg",
+      "title": "outfit 1",
+      "description": "Description goes here",
+      "price": "799",
+      "tag": "USD",
+      "type": "Men's Outfit"
+    },
+    {
+      "id": 4,
+      "image": "outfit 3.jpg",
+      "title": "outifit 1",
+      "description": "Description goes here",
+      "price": "799",
+      "tag": "USD",
+      "type": "Men's Outfit"
+    },
+    {
+      "id": 5,
+      "image": "outfit 4.jpg",
+      "title": "outifit 1",
+      "description": "Description goes here",
+      "price": "799",
+      "tag": "USD",
+      "type": "Men's Outfit"
+    },
+    {
+      "id": 6,
+      "image": "outfit 5.jpg",
+      "title": "outifit 1",
+      "description": "Description goes here",
+      "price": "799",
+      "tag": "USD",
+      "type": "Men's Outfit"
+    },
+    {
+      "id": 7,
+      "image": "outfit 7.jpg",
+      "title": "outifit 1",
+      "description": "Description goes here",
+      "price": "799",
+      "tag": "USD",
+      "type": "Men's Outfit"
+    },
+    {
+      "id": 8,
+      "image": "outfit 8.jpg",
+      "title": "outifit 8",
+      "description": "Description goes here",
+      "price": "799",
+      "tag": "USD",
+      "type": "Men's Outfit"
+    },
+    {
+      "id": 9,
+      "image": "outfit 9.jpg",
+      "title": "outifit 9",
+      "description": "Description goes here",
+      "price": "799",
+      "tag": "USD",
+      "type": "Men's Outfit"
+    },
+    {
+      "id": 10,
+      "image": "outfit 11.jpg",
+      "title": "outfit 11",
+      "description": "Description goes here",
+      "price": "799",
+      "tag": "USD",
+      "type": "Men's Outfit"
+    },
+    {
+      "id": 11,
+      "image": "outfit 12.jpg",
+      "title": "outifit 12",
+      "description": "Description goes here",
+      "price": "799",
+      "tag": "USD",
+      "type": "Men's Outfit"
+    },
+    {
+      "id": 12,
+      "image": "ninja.jpg",
+      "title": "Ninja Outfit",
+      "description": "Description goes here",
+      "price": "799",
+      "tag": "USD",
+      "type": "Men's Outfit"
+    },
+    {
+      "id": 13,
+      "image": "outfit 14.jpg",
+      "title": "outfit 14",
+      "description": "Description goes here",
+      "price": "799",
+      "tag": "USD",
+      "type": "Men's Outfit"
+    },
+    {
+      "id": 14,
+      "image": "outfit 15.jpg",
+      "title": "outfit 15",
+      "description": "Description goes here",
+      "price": "799",
+      "tag": "USD",
+      "type": "Men's Outfit"
+    },
+    {
+      "id": 15,
+      "image": "outfit 16.jpg",
+      "title": "outfit 16",
+      "description": "Description goes here",
+      "price": "799",
+      "tag": "USD",
+      "type": "Men's Outfit"
+    },
+    {
+      "id": 16,
+      "image": "outfit 17.jpg",
+      "title": "outfit 17",
+      "description": "Description goes here",
+      "price": "799",
+      "tag": "USD",
+      "type": "Men's Outfit"
+    },
+    {
+      "id": 17,
+      "image": "outfit 18.jpg",
+      "title": "outfit 18",
+      "description": "Description goes here",
+      "price": "799",
+      "tag": "USD",
+      "type": "Men's Outfit"
+    },
+    {
+      "id": 18,
+      "image": "outfit 19.jpg",
+      "title": "outfit 19",
+      "description": "Description goes here",
+      "price": "799",
+      "tag": "USD",
+      "type": "Men's Outfit"
+    }
+],
+ "products": [
+    {
+      "id": 0,
+      "image": "ps5.jpg",
+      "title": "PlayStation 5",
+      "description": "Description goes here",
+      "price": "500",
+      "tag": "USD"
+    },
+    {
+      "id": 1,
+      "image": "aot.jpg",
+      "title": "Attack on Titan Manga",
+      "description": "Attack on Titan Manga",
+      "price": "15.99",
+      "tag": "USD"
+    },
+    {
+      "id": 2,
+      "image": "hp2.jpg",
+      "title": "Headphone",
+      "description": "Description goes here",
+      "price": "150.99",
+      "tag": "USD"
+    },
+    {
+      "id": 3,
+      "image": "hp.jpg",
+      "title": "Audionic Headphone",
+      "description": "Description goes here",
+      "price": "250.99",
+      "tag": "USD"
+    },
+    {
+      "id": 4,
+      "image": "macbook.jpg",
+      "title": "Apple Macbook Air M1",
+      "description": "Description goes here",
+      "price": "1500",
+      "tag": "USD"
+    },
+    {
+      "id": 5,
+      "image": "db.jpg",
+      "title": "Hex Dumbells",
+      "description": "Description goes here",
+      "price": "49.99",
+      "tag": "USD"
+    },
+    {
+      "id": 6,
+      "image": "kb.jpg",
+      "title": "Kettlebell 32kg",
+      "description": "Description goes here",
+      "price": "80.00",
+      "tag": "USD"
+    },
+    {
+      "id": 7,
+      "image": "outfit 12.jpg",
+      "title": "outifit 12",
+      "description": "Description goes here",
+      "price": "799",
+      "tag": "USD",
+      "type": "Men's Outfit"
+    },
+    {
+      "id": 8,
+      "image": "outfit 11.jpg",
+      "title": "outfit 11",
+      "description": "Description goes here",
+      "price": "799",
+      "tag": "USD",
+      "type": "Men's Outfit"
+    }
+]
+} 
+
+  

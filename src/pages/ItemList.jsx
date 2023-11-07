@@ -2,14 +2,16 @@ import { useParams } from "react-router-dom";
 import useFetch from "../useFetch";
 import { useContext, useState } from "react";
 import { CartContext } from "../context/cart-display-context";
+import db from "../data/db.json";
 
 const ItemList = ({ type }) => {
     const { dispatch } = useContext(CartContext)
     
     const { id } = useParams(); //renders with the path name
-    const url = 'http://localhost:4000/' + type + '/' + id;
-    const {loading, data, error} = useFetch(url);
-    //console.log(data)
+    // const url = 'http://localhost:4000/' + type + '/' + id;
+    // const {loading, data, error} = useFetch(url);
+    
+    const data = db[type][id]
 
     const [count, setCount] = useState(1);
 
@@ -25,8 +27,8 @@ const ItemList = ({ type }) => {
 
     return (
         <div className="m-10 lg:flex justify-evenly">
-            {loading && <p>Loading...</p>}
-            {error && <p>Failed to fetch resources</p>}
+            {/* {loading && <p>Loading...</p>}
+            {error && <p>Failed to fetch resources</p>} */}
 
             <div className="lg:h-[480px] lg:w-[780px] rounded-xl overflow-hidden shadow-xl">
                 <img className="object-cover object-center w-full h-full" src={`../img/${data.image}`} alt="" />
