@@ -4,9 +4,15 @@ import TopPicksItem from "../../TopPicks/TopPicksItem";
 import useFetch from "../../useFetch";
 import ReactPaginate from "react-paginate";
 import { useState, useEffect } from "react";
+import db from "../../data/db.json";
 
 const Gym = () => {
-    const { loading, data, error }  = useFetch('http://localhost:4000/gym')
+    //UNCOMMENT WHEN BACKEND IS READY
+
+   // const { loading, data, error }  = useFetch('http://localhost:4000/gym')
+    
+   const data = db["gym"];
+
     const [items, setItems] = useState([]);
     const [pageNumber, setPageNumber] = useState(0);
     const itemsPerPage = 9;
@@ -16,10 +22,10 @@ const Gym = () => {
     }, [pageNumber]);
 
     useEffect(() => {
-        if(!loading) {
+        //if(!loading) {
             setItems(data.slice(pageNumber * itemsPerPage, (pageNumber + 1) * itemsPerPage))
-        }
-    }, [loading, data, pageNumber]);
+        //}
+    }, [data, pageNumber]);
 
     const pageCount = Math.ceil(data.length / itemsPerPage);
 
@@ -29,8 +35,8 @@ const Gym = () => {
     
     return ( 
         <div>
-                {loading && <p>Loading...</p>}
-                {error && <p>Failed to load resources</p>}
+                {/* {loading && <p>Loading...</p>}
+                {error && <p>Failed to load resources</p>} */}
                 
             <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8 m-5">
                 {items.map((product, index) => (
