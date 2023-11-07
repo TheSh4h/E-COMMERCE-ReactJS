@@ -1,17 +1,21 @@
 import { Link } from "react-router-dom";
 import TopPicksItem from "../TopPicks/TopPicksItem";
 import useFetch from "../useFetch";
+import db from "../data/db.json";
 
 const New = () => {
-    const { loading, data, error } = useFetch('http://localhost:4000/products');
+    //UNCOMMENT WHEN BACKEND READY
+    //const { loading, data, error } = useFetch('http://localhost:4000/products');
+
+    const data = db["products"]
 
     return ( 
         <div className='m-10'>
             <h1 className='font-semibold text-xl'>Top picks for you!</h1>
             <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-4 mt-10">
                 
-                {loading && <p>Loading...</p>}
-                {error && <p>Failed to load resources</p>}
+                {/* {loading && <p>Loading...</p>} */}
+                {/* {error && <p>Failed to load resources</p>} */}
 
                 {data.map((product, index) => (
                     <Link to={`${product.id}`} key={index}>
