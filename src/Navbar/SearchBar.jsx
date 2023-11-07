@@ -2,22 +2,28 @@ import { useContext } from "react";
 import { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { searchContext } from "../context/search-context";
+import db from "../data/db.json";
+
 
 const SearchBar = () => {
     const navigate = useNavigate();
     const [input, setInput] = useState("");
+    const [searchValue, setSearchValue] = useState("")
     const [results, setResults] = useState([]);
 
     const { setValue, setLoading } = useContext(searchContext)
 
     const urls = [
-        'http://localhost:4000/gym',
-        'http://localhost:4000/books',
-        'http://localhost:4000/outfits',
-        'http://localhost:4000/electronics'
+        db["products"],
+        db["gym"],
+        db["electronics"],
+        db["books"],
+        db["outfits"]
     ]
-
-    useEffect(() => {
+    const allData = urls.flat();
+    setLoading(false)
+    /*
+useEffect(() => {
         const fetchData = async () => {
             try {
                 const promises = urls.map(async (url) => {
@@ -37,7 +43,7 @@ const SearchBar = () => {
         };
     
         fetchData();
-    }, []);
+    }, []); */
 
     const handleChange = (e) => {
         e.preventDefault()
@@ -47,16 +53,17 @@ const SearchBar = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         navigate("/search")
+        setSearchValue(input)
     }
 
     useEffect(() => {
-        if(input.length > 0) {
-            const filteredResult = results.filter((item) =>
-            item.title.toLowerCase().match(input.toLowerCase())
+        if(searchValue.length > 0) {
+            const filteredResult = allData.filter((item) =>
+            item.title.toLowerCase().match(searchValue.toLowerCase())
         );
         setValue(filteredResult);
         }
-    }, [input, results]);
+    }, [searchValue, results]);
 
     return ( 
         <form onSubmit={handleSubmit}>
