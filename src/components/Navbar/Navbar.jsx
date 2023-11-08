@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import Kart from '../img/Kart.png';
+import Kart from '../../img/Kart.png';
 import MyAccountElement from './MyAccountElement';
 import NavbarCenter from './NavbarCenter';
 import CartButton from './cart-button';

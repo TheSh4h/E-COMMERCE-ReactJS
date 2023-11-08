@@ -1,6 +1,6 @@
 import "./paginate.css"
 import { Link } from "react-router-dom";
-import TopPicksItem from "../../TopPicks/TopPicksItem";
+import ProductCard from "../../components/ProductCard";
 import useFetch from "../../useFetch";
 import ReactPaginate from "react-paginate";
 import { useState, useEffect } from "react";
@@ -39,7 +39,7 @@ const Outfit = () => {
             <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8 m-5">
                 {items.map((product, index) => (
                     <Link to={`/Men's Outfit/${product.id}`} key={index}>
-                        <TopPicksItem
+                        <ProductCard
                             key={index}
                             image={`../img/${product.image}`}
                             title={product.title}

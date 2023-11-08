@@ -1,6 +1,6 @@
 import { useContext } from "react";
-import { searchContext } from "./context/search-context";
-import TopPicksItem from "./TopPicks/TopPicksItem";
+import { searchContext } from "../context/search-context";
+import ProductCard from "./ProductCard";
 import { useNavigate } from "react-router-dom";
 
 const SearchPage = () => {
@@ -15,7 +15,7 @@ const SearchPage = () => {
                     <div onClick={() => {
                         navigate(`/${product.type}/${product.id}`)
                     }}>
-                        <TopPicksItem
+                        <ProductCard
                             key={index}
                             image={`../img/${product.image}`}
                             title={product.title}

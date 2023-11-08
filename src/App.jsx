@@ -6,10 +6,10 @@ import Gym from './pages/Category Pages/Gym';
 import Books from './pages/Category Pages/Books';
 import Outfit from './pages/Category Pages/Outfit';
 import Electronics from './pages/Category Pages/Electronics';
-import ItemList from './pages/ItemList';
+import ItemPage from './pages/ItemPage';
 import CartContextProvider from './context/cart-display-context';
 import Account from './pages/Account';
-import SearchPage from './SearchPage';
+import SearchPage from './components/SearchPage';
 import SearchContextProvider from './context/search-context';
 import Deals from './pages/Deals';
 import New from './pages/New';
@@ -23,11 +23,11 @@ const router = createBrowserRouter(
       <Route path='Books' element={<Books />} />
       <Route path="Men's Outfit" element={<Outfit />} />
       <Route path='Electronics' element={<Electronics />} />
-      <Route path="Men's Outfit/:id" element={<ItemList type="outfits" />} />
-      <Route path="Books/:id" element={<ItemList type="books" />} />
-      <Route path="Gym/:id" element={<ItemList type="gym" />} />
-      <Route path="Electronics/:id" element={<ItemList type="electronics" />} />
-      <Route path=':id' element={<ItemList type="products" />} />
+      <Route path="Men's Outfit/:id" element={<ItemPage type="outfits" />} />
+      <Route path="Books/:id" element={<ItemPage type="books" />} />
+      <Route path="Gym/:id" element={<ItemPage type="gym" />} />
+      <Route path="Electronics/:id" element={<ItemPage type="electronics" />} />
+      <Route path=':id' element={<ItemPage type="products" />} />
       <Route path='search' element={<SearchPage />} />
       <Route path='Deals' element={<Deals />} />
       <Route path="What's New" element={<New />} />

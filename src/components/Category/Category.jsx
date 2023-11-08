@@ -1,7 +1,7 @@
-import books from '../img/books.jpg';
-import outfit from '../img/G outfits.jpg';
-import gym from '../img/gym.jpg';
-import console from '../img/console.jpg';
+import books from '../../img/books.jpg';
+import outfit from '../../img/G outfits.jpg';
+import gym from '../../img/gym.jpg';
+import console from '../../img/console.jpg';
 import { Link } from 'react-router-dom';
 import CategoryCard from './CategoryCard';
 

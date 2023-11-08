@@ -1,11 +1,11 @@
-import Navbar from '../Navbar/Navbar';
-import Footer from '../Footer';
+import Navbar from '../components/Navbar/Navbar';
+import Footer from '../components/Footer';
 import { Outlet } from 'react-router-dom';
 import Cart from '../Cart/Cart';
 import { useContext } from 'react';
 import { CartContext } from '../context/cart-display-context';
-import ScrollToTop from '../ScrollToTop';
-import Breadcrumbs from '../Breadcrumbs';
+import ScrollToTop from '../components/ScrollToTop';
+import Breadcrumbs from '../components/Breadcrumbs';
 
 const RootLayout = () => {
     const { showCart, setShowCart } = useContext(CartContext);

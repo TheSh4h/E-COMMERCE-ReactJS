@@ -1,7 +1,7 @@
-import TopPicksItem from './TopPicksItem';
+import ProductCard from '../ProductCard';
 //import useFetch from '../useFetch';
 import { Link } from 'react-router-dom';
-import db from "../data/db.json";
+import db from "../../data/db.json";
 
 
 const TopPicks = ({ id }) => {
@@ -20,7 +20,7 @@ const TopPicks = ({ id }) => {
 
                 {db[id].map((product, index) => (
                     <Link to={`${product.id}`} key={index}>
-                        <TopPicksItem
+                        <ProductCard
                             key={index}
                             image={`../img/${product.image}`}
                             title={product.title}

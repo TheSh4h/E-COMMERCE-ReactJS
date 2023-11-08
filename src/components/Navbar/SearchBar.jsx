@@ -1,8 +1,8 @@
 import { useContext } from "react";
 import { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { searchContext } from "../context/search-context";
-import db from "../data/db.json";
+import { searchContext } from "../../context/search-context";
+import db from "../../data/db.json";
 
 
 const SearchBar = () => {

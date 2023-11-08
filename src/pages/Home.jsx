@@ -1,5 +1,5 @@
-import Category from "../Category/Category";
-import TopPicks from "../TopPicks/TopPicks";
+import Category from "../components/Category/Category";
+import TopPicks from "../components/TopPicks/TopPicks";
 
 const Home = () => {
     return ( 

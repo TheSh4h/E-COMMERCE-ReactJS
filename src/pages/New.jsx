@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import TopPicksItem from "../TopPicks/TopPicksItem";
+import ProductCard from "../components/ProductCard";
 import useFetch from "../useFetch";
 import db from "../data/db.json";
 
@@ -19,7 +19,7 @@ const New = () => {
 
                 {data.map((product, index) => (
                     <Link to={`${product.id}`} key={index}>
-                        <TopPicksItem
+                        <ProductCard
                             key={index}
                             image={`../img/${product.image}`}
                             title={product.title}

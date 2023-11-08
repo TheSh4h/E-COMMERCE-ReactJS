@@ -1,4 +1,4 @@
-const TopPicksItem = ( { image, title, description, price, tag } ) => {
+const ProductCard = ( { image, title, description, price, tag } ) => {
     return ( 
         <div className="itemCard">
                 <div className="h-64 w-96 overflow-hidden">
@@ -16,4 +16,4 @@ const TopPicksItem = ( { image, title, description, price, tag } ) => {
      );
 }
  
-export default TopPicksItem;
+export default ProductCard;

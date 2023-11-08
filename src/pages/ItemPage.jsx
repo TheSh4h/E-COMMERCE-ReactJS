@@ -4,7 +4,7 @@ import { useContext, useState } from "react";
 import { CartContext } from "../context/cart-display-context";
 import db from "../data/db.json";
 
-const ItemList = ({ type }) => {
+const ItemPage = ({ type }) => {
     const { dispatch } = useContext(CartContext)
     
     const { id } = useParams(); //renders with the path name
@@ -120,4 +120,4 @@ const ItemList = ({ type }) => {
      );
 }
  
-export default ItemList;
+export default ItemPage;
