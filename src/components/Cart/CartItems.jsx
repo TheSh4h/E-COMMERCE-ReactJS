@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from "react";
-import { CartContext } from "../context/cart-display-context";
+import { CartContext } from "../../context/cart-display-context";
 
 const CartItems = ({ id, image, title, price, quantity }) => {
     const { dispatch } = useContext(CartContext)

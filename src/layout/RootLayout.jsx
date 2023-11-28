@@ -1,7 +1,7 @@
 import Navbar from '../components/Navbar/Navbar';
 import Footer from '../components/Footer';
 import { Outlet } from 'react-router-dom';
-import Cart from '../Cart/Cart';
+import Cart from '../components/Cart/Cart';
 import { useContext } from 'react';
 import { CartContext } from '../context/cart-display-context';
 import ScrollToTop from '../components/ScrollToTop';
