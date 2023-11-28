@@ -21,7 +21,9 @@ const RootLayout = () => {
                     </header>
                     <div onClick={() => setShowCart(false)}>
                         <main className="mt-20">
-                        <Breadcrumbs />
+                            <div className='mx-10 mt-28'>
+                                <Breadcrumbs />
+                            </div>
                             <Outlet />
                         </main>
 
