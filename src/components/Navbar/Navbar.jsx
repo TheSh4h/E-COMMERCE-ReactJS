@@ -33,7 +33,7 @@ const Navbar = () => {
 
     return ( 
         <nav className="top-0 fixed z-10 bg-white w-full">
-            <div className="flex justify-between items-center p-1
+            <div className="flex justify-between items-center md:p-1
             border-b">
                 <div className="flex items-center cursor-pointer">
                     <img src={Kart} alt="Kart" />
