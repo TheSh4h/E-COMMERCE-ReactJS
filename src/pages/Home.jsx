@@ -3,10 +3,10 @@ import TopPicks from "../components/TopPicks/TopPicks";
 
 const Home = () => {
     return ( 
-        <>
-        <Category />
-        <TopPicks id="products" />
-        </>
+        <div className="container mx-auto">
+            <Category />
+            <TopPicks id="products" />
+        </div>
      );
 }
  
