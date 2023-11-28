@@ -3,11 +3,9 @@ import TopPicks from "../components/TopPicks/TopPicks";
 
 const Home = () => {
     return ( 
-        <div className="container mx-auto">
+        <div className="flex flex-col justify-center items-center">
             <Category />
-            <div className="p-5">
-                <TopPicks id="products" />
-            </div>
+            <TopPicks id="products" />
         </div>
      );
 }
