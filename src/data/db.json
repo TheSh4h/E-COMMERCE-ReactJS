@@ -19,7 +19,7 @@
       "type": "electronics"
     },
     {
-      "id": 3,
+      "id": 2,
       "image": "macbook.jpg",
       "title": "Apple Macbook Air M1",
       "description": "Description goes here",
@@ -28,16 +28,16 @@
       "type": "electronics"
     },
     {
-      "id": 4,
+      "id": 3,
       "image": "iphone.jpg",
-      "title": "Apple Macbook Air M1",
+      "title": "iPhone 11 Pro Max",
       "description": "Description goes here",
       "price": "999.99",
       "tag": "USD",
       "type": "electronics"
     },
     {
-      "id": 5,
+      "id": 4,
       "image": "ps5.jpg",
       "title": "PlayStation 5",
       "description": "Description goes here",
