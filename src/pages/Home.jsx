@@ -5,7 +5,7 @@ const Home = () => {
     return ( 
         <div className="container mx-auto">
             <Category />
-            <div className="m-5">
+            <div className="p-5">
                 <TopPicks id="products" />
             </div>
         </div>
