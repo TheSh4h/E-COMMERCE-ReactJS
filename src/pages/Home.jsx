@@ -5,7 +5,9 @@ const Home = () => {
     return ( 
         <div className="container mx-auto">
             <Category />
-            <TopPicks id="products" />
+            <div className="m-5">
+                <TopPicks id="products" />
+            </div>
         </div>
      );
 }
