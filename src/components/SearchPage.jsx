@@ -8,7 +8,7 @@ const SearchPage = () => {
     const navigate = useNavigate();
     console.log(value)
     return ( 
-        <div className="grid lg:grid-cols-3 md:grid-cols-2">
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 h-screen">
             {loading && <div>Loading...</div>}
             {value.length === 0 ? <div>No results found</div>: null}
             {value.map((product, index) => (
